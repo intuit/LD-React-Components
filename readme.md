@@ -4,6 +4,7 @@
   <h1>LD React Components</h1>
   <p>Semantic component helpers to support LaunchDarkly in your react app.</p>
 </div>
+[![CircleCI](https://circleci.com/gh/intuit/LD-React-Components/tree/master.svg?style=svg)](https://circleci.com/gh/intuit/LD-React-Components/tree/master)
 
 ## Usage
 
