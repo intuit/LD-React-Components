@@ -1,0 +1,87 @@
+{
+  "name": "ld-react-components",
+  "version": "1.0.0",
+  "description": "Semantic component helpers to support LaunchDarkly in your react app.",
+  "main": "dist/index.js",
+  "author": {
+    "name": "Dave Bergschneider",
+    "email": "dave@cmscode.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/intuit/ld-react-components"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "prepare": "yarn build",
+    "test": "mocha --require @babel/register",
+    "test:jest": "jest --coverage",
+    "test:wc": "nyc --reporter=html mocha --require @babel/register",
+    "postpublish": "git push --follow-tags --set-upstream origin ${branch}",
+    "lint": "eslint --ext .js src/",
+    "build": "babel src/lib -d dist --copy-files",
+    "build:watch": "babel src/lib -w -d lib --copy-files",
+    "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
+    "dev": "yarn docs"
+  },
+  "keywords": [
+    "launch-darkly",
+    "feature",
+    "flags",
+    "react"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "concurrently": "^4.1.0",
+    "css-loader": "^2.1.1",
+    "eslint": "~5.16.0",
+    "eslint-config-standard": "~12.0.0",
+    "eslint-plugin-import": "~2.17.2",
+    "eslint-plugin-node": "~9.0.1",
+    "eslint-plugin-promise": "~4.1.1",
+    "eslint-plugin-react": "~7.13.0",
+    "eslint-plugin-standard": "~4.0.0",
+    "expect": "^24.8.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jsdom": "15.1.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
+    "react": "^16.0.0",
+    "react-dom": "^16.3.2",
+    "sinon": "^7.3.2",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.3.1"
+  },
+  "dependencies": {
+    "@babel/register": "^7.4.4",
+    "Base64": "1.0.2",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
+    "escape-string-regexp": "2.0.0",
+    "hash.js": "~1.1.7",
+    "jest": "^24.8.0",
+    "ldclient-js": "^2.10.2",
+    "prop-types": "^15.7.2",
+    "react-hot-loader": "^4.8.5",
+    "react-test-renderer": "^16.8.6"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  }
+}

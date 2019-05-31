@@ -1,0 +1,51 @@
+# Hidden Environment Files #
+.*
+!.eslintrc
+!.github
+!.gitignore
+!.babelrc
+!.npmrc
+!.npmignore
+
+# LOG Files #
+*.log
+log/
+
+# IDE #
+.idea/
+.vscode/
+*.swp
+
+# Node Files #
+/node_modules
+
+# Tests #
+/coverage/
+/errorShots/
+/screenshots/
+stats.json
+package-lock.json
+# Build folder #
+local
+build
+/dist
+
+#IDE Specific files
+
+#SublimeText
+*.sublime-project
+*.sublime-workspace
+
+#IntelliJ
+.idea/
+*.iml
+atlassian-ide-plugin.xml
+*.ipr
+*.iws
+
+#Eclipse
+.project
+
+#OSX
+.DS_Store
+.vscode
