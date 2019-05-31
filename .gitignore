@@ -6,6 +6,7 @@
 !.babelrc
 !.npmrc
 !.npmignore
+!.circleci
 
 # LOG Files #
 *.log
