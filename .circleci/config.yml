@@ -1,11 +1,9 @@
 version: 2.1
 
 defaults: &defaults
-  working_directory: ~/auto
+  working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
-  environment:
-    TZ: '/usr/share/zoneinfo/America/Los_Angeles'
 
 aliases:
   # Circle related commands
@@ -13,12 +11,12 @@ aliases:
     keys:
       # Find a cache corresponding to this specific package.json checksum
       # when this file is changed, this key will fail
-      - auto-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
-      - auto-{{ checksum "yarn.lock" }}
+      - ld-react-components-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+      - ld-react-components-{{ checksum "yarn.lock" }}
       # Find the most recent cache used from any branch
-      - auto-
+      - ld-react-components-
   - &save-cache
-    key: auto-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+    key: ld-react-components-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
     paths:
       - ~/.cache/yarn
       - node_modules
@@ -40,7 +38,7 @@ aliases:
   #   command: yarn semver:check
   # - &bundle
   #   name: Bundle the code into binaries for multiple platforms
-  #   command: yarn lerna run bundle --scope=auto
+  #   command: yarn lerna run bundle --scope=ld-react-components
 
 jobs:
   # semver:
@@ -65,7 +63,7 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/auto
+          at: ~/ld-react-components
       - run: *build
       # - run: *bundle
       - persist_to_workspace:
@@ -77,14 +75,14 @@ jobs:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/auto
+          at: ~/ld-react-components
       - run: *lint
 
   test:
     <<: *defaults
     steps:
       - attach_workspace:
-          at: ~/auto
+          at: ~/ld-react-components
       - run: *test
       # - run:
       #     name: Send CodeCov Results
@@ -94,7 +92,7 @@ jobs:
   #   <<: *defaults
   #   steps:
   #     - attach_workspace:
-  #         at: ~/auto
+  #         at: ~/ld-react-components
   #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
   #     - run:
   #         name: Release
@@ -104,7 +102,7 @@ jobs:
   #   <<: *defaults
   #   steps:
   #     - attach_workspace:
-  #         at: ~/auto
+  #         at: ~/ld-react-components
   #     - run:
   #         name: Publish Docs
   #         command: yarn docs:publish
