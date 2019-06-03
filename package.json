@@ -9,17 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/intuit/ld-react-components"
+    "url": "https://github.com/intuit/LD-React-Components"
   },
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.com/"
   },
   "scripts": {
     "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage",
-    "test": "mocha --require @babel/register",
-    "test:jest": "jest --coverage",
-    "test:wc": "nyc --reporter=html mocha --require @babel/register",
+    "test": "jest --coverage",
     "postpublish": "git push --follow-tags --set-upstream origin ${branch}",
     "lint": "eslint --ext .js src/",
     "build": "babel src/lib -d dist --copy-files",
