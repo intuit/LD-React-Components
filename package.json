@@ -16,6 +16,7 @@
   },
   "scripts": {
     "prepare": "yarn build",
+    "clean": "rimraf ./dist ./coverage",
     "test": "mocha --require @babel/register",
     "test:jest": "jest --coverage",
     "test:wc": "nyc --reporter=html mocha --require @babel/register",
