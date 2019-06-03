@@ -61,7 +61,7 @@ class LDApi {
           userKey = key.replace('_', '');
         }
 
-        if (key === 'authId' || key === '_intuit_authid') {
+        if (key === 'authId') {
           user[key] = hash.sha256().update(user[key]).digest('hex');
         }
 

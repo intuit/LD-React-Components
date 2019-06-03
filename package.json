@@ -17,9 +17,7 @@
   "scripts": {
     "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage",
-    "test": "mocha --require @babel/register",
-    "test:jest": "jest --coverage",
-    "test:wc": "nyc --reporter=html mocha --require @babel/register",
+    "test": "jest --coverage",
     "postpublish": "git push --follow-tags --set-upstream origin ${branch}",
     "lint": "eslint --ext .js src/",
     "build": "babel src/lib -d dist --copy-files",
@@ -43,6 +41,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.4.4",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
