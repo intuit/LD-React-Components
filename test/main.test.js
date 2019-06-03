@@ -20,9 +20,9 @@ let config = {
 };
 
 const options = {
-  baseUrl: 'https://app.intuit.launchdarkly.com',
-  eventsUrl: 'https://events.intuit.launchdarkly.com',
-  streamUrl: 'https://stream.intuit.launchdarkly.com',
+  baseUrl: 'https://app.launchdarkly.com',
+  eventsUrl: 'https://events.launchdarkly.com',
+  streamUrl: 'https://stream.launchdarkly.com',
   baseTimeout: 100
 };
 
@@ -36,7 +36,7 @@ const flags = {
 
 let user = { authId: 'ode_user', country: 'USA' };
 
-const envClientKey = '59a74eaba9a1d30b6d0a3deb';
+const envClientKey = '59x74xxxx9x1x30x6x0x3xxx';
 
 // mock func to init launch darkly
 // let ldInit = () => {};
