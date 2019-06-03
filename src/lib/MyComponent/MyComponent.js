@@ -6,10 +6,6 @@ import PropTypes from 'prop-types';
 import './MyComponent.style';
 
 class MyComponent extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {}
 
   render() {
@@ -21,7 +17,7 @@ class MyComponent extends React.Component {
         <i className='icon-test'>Three</i>
         <div className='name-holder'>My name is - {name}</div>
       </div>
-    )
+    );
   }
 }
 
