@@ -98,14 +98,14 @@ jobs:
   #         name: Release
   #         command: yarn run release
 
-  # publishDocs:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/ld-react-components
-  #     - run:
-  #         name: Publish Docs
-  #         command: yarn docs:publish
+  publishDocs:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run:
+          name: Publish Docs
+          command: yarn docs:publish
 
 workflows:
   version: 2
@@ -134,10 +134,11 @@ workflows:
       #       - test
       #       - lint
 
-      # - publishDocs:
-      #     requires:
-      #       - release
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
+      - publishDocs:
+          requires:
+            - test
+            - lint
+          filters:
+            branches:
+              only:
+                - master

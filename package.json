@@ -24,6 +24,8 @@
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
+    "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
+    "docs:publish": "push-dir --dir=src/docs/dist --branch=gh-pages",
     "dev": "yarn docs"
   },
   "keywords": [
@@ -62,9 +64,10 @@
     "jsdom-global": "3.0.2",
     "mocha": "^6.1.4",
     "nyc": "^14.1.1",
+    "push-dir": "^0.4.1",
     "react": "^16.0.0",
-    "react-hot-loader": "^4.8.5",
     "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.8.5",
     "react-test-renderer": "^16.8.6",
     "sinon": "^7.3.2",
     "style-loader": "^0.23.1",

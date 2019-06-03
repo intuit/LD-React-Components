@@ -29,7 +29,7 @@ package-lock.json
 # Build folder #
 local
 build
-/dist
+dist
 
 #IDE Specific files
 

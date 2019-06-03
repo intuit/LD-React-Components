@@ -1,73 +1,81 @@
-import path from 'path';
-import webpack from 'webpack';
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-export default () => ({
-  mode: 'development',
-  entry: [
-    'react-hot-loader/patch',
-    // activate HMR for React
+module.exports = () => {
+  const isProd = process.env.NODE_ENV === 'production';
 
-    'webpack-dev-server/client?http://localhost:8888',
-    // bundle the client for webpack-dev-server
-    // and connect to the provided endpoint
+  return {
+    mode: 'development',
+    entry: [
+      !isProd && 'react-hot-loader/patch',
+      // activate HMR for React
 
-    'webpack/hot/only-dev-server',
-    // bundle the client for hot reloading
-    // only- means to only hot reload for successful updates
+      !isProd && 'webpack-dev-server/client?http://localhost:8888',
+      // bundle the client for webpack-dev-server
+      // and connect to the provided endpoint
 
-    './src/docs/index.js'
-    // the entry point of our app
-  ],
+      !isProd && 'webpack/hot/only-dev-server',
+      // bundle the client for hot reloading
+      // only- means to only hot reload for successful updates
 
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
-    // necessary for HMR to know where to load the hot update chunks
-  },
+      './src/docs/index.js'
+      // the entry point of our app
+    ].filter(Boolean),
 
-  devtool: 'inline-source-map',
+    output: {
+      filename: 'bundle.js',
+      path: path.resolve(__dirname, 'dist'),
+      publicPath: '/'
+      // necessary for HMR to know where to load the hot update chunks
+    },
 
-  devServer: {
-    hot: true,
-    // enable HMR on the server
+    devtool: 'inline-source-map',
 
-    contentBase: path.resolve(__dirname, 'dist'),
-    // match the output path
+    devServer: {
+      hot: !isProd,
+      // enable HMR on the server
 
-    publicPath: '/',
-    // match the output `publicPath`
+      contentBase: path.resolve(__dirname, 'dist'),
+      // match the output path
 
-    stats: 'minimal'
-  },
+      publicPath: '/',
+      // match the output `publicPath`
 
-  module: {
-    rules: [
-      {
-        test: /.jsx?$/,
-        exclude: /node_modules/,
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env', '@babel/preset-react']
+      stats: 'minimal'
+    },
+
+    module: {
+      rules: [
+        {
+          test: /.jsx?$/,
+          exclude: /node_modules/,
+          use: [
+            {
+              loader: 'babel-loader',
+              options: {
+                presets: ['@babel/preset-env', '@babel/preset-react']
+              }
             }
-          }
-        ]
-      },
-      {
-        test: /\.(scss)$/,
-        loader: 'style-loader!css-loader!sass-loader'
-      }
-    ]
-  },
+          ]
+        },
+        {
+          test: /\.(scss)$/,
+          loader: 'style-loader!css-loader!sass-loader'
+        }
+      ]
+    },
 
-  resolve: {
-    extensions: ['.js', '.jsx', '.scss']
-  },
+    resolve: {
+      extensions: ['.js', '.jsx', '.scss']
+    },
 
-  plugins: [new webpack.HotModuleReplacementPlugin()],
-  optimization: {
-    namedModules: true
-  }
-});
+    plugins: [
+      !isProd && new webpack.HotModuleReplacementPlugin(),
+      new HtmlWebpackPlugin({ template: path.join(__dirname, './index.html') })
+    ].filter(Boolean),
+    optimization: {
+      namedModules: true
+    }
+  };
+};
