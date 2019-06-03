@@ -26,7 +26,7 @@ module.exports = () => {
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: '/'
+      publicPath: isProd ? 'LD-React-Components/' : '/'
       // necessary for HMR to know where to load the hot update chunks
     },
 
