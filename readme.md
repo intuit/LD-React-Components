@@ -4,7 +4,7 @@
   <h1>LD React Components</h1>
   <p>Semantic component helpers to support LaunchDarkly in your react app.</p>
 </div>
-<div align="center"><a href="https://circleci.com/gh/intuit/auto"><img src="https://circleci.com/gh/intuit/LD-React-Components/tree/master.svg?style=svg&circle-token=df1c1f6aab7a369b9957bf8aaf8642e1c5b3dda5" alt="CircleCI" /></a></div>
+<div align="center"><a href="https://circleci.com/gh/intuit/LD-React-Components"><img src="https://circleci.com/gh/intuit/LD-React-Components/tree/master.svg?style=svg&circle-token=df1c1f6aab7a369b9957bf8aaf8642e1c5b3dda5" alt="CircleCI" /></a></div>
 
 ## Usage
 
@@ -19,12 +19,23 @@ yarn add ld-react-components
 ### Importing the components
 
 ```js
-import { FeatureFlag, FeatureSwitch, FeatureCase, FeatureTrue, FeatureFalse } from 'ld-react-components';
+import {
+  FeatureFlag,
+  FeatureSwitch,
+  FeatureCase,
+  FeatureTrue,
+  FeatureFalse
+} from 'ld-react-components';
 ```
 
-#### API initialization 
+#### API initialization
+
 ```js
-this._ldclientPromise = launchDarklyClient.initWithPromise(user, this._sdkKey, 500);
+this._ldclientPromise = launchDarklyClient.initWithPromise(
+  user,
+  this._sdkKey,
+  500
+);
 
 const endpoints = {
   baseUrl: 'https://app.launchdarkly.com',
@@ -33,8 +44,14 @@ const endpoints = {
   baseTimeout: 100
 };
 
-this._ldclientPromise = launchDarklyClient.initWithPromise(user, this._sdkKey,endpoints, 500);
+this._ldclientPromise = launchDarklyClient.initWithPromise(
+  user,
+  this._sdkKey,
+  endpoints,
+  500
+);
 ```
+
 ### FeatureFlag
 
 Takes `flagKey` and `appFlags` as `props`, which is an object containing list of features.
@@ -49,19 +66,29 @@ const applicationKeys = {
 
 ### FeatureSwitch, FeatureCase and FeatureDefault
 
-`FeatureSwitch` should be a child of ``FeatureFlag`` and can take ``FeatureCase`` and ``FeatureDefault`` as children.
+`FeatureSwitch` should be a child of `FeatureFlag` and can take `FeatureCase` and `FeatureDefault` as children.
 
-``FeatureCase`` component takes `condition` and `allowBreak`(a boolean) as props, 
+`FeatureCase` component takes `condition` and `allowBreak`(a boolean) as props,
 `condition` is the `case` feature, while `allowBreak` used as a `break`. The reason for name change is `case` and `break` are reserved words on JS.
 
 ```jsx
 <FeatureFlag flagKey="multivariate-test" appFlags={applicationKeys}>
   <FeatureSwitch>
-    <FeatureCase condition="multivariate-test-1" allowBreak><p>Multivariate Test 1 Rendered</p></FeatureCase>
-    <FeatureCase condition="multivariate-test-2" allowBreak><p>Multivariate Test 2 Rendered</p></FeatureCase>
-    <FeatureCase condition="multivariate-test-3" allowBreak><p>Multivariate Test 3 Rendered</p></FeatureCase>
-    <FeatureCase condition="multivariate-test-4" allowBreak><p>Multivariate Test 4 Rendered</p></FeatureCase>
-    <FeatureDefault><p>If no conditions are met then render the default</p></FeatureDefault>
+    <FeatureCase condition="multivariate-test-1" allowBreak>
+      <p>Multivariate Test 1 Rendered</p>
+    </FeatureCase>
+    <FeatureCase condition="multivariate-test-2" allowBreak>
+      <p>Multivariate Test 2 Rendered</p>
+    </FeatureCase>
+    <FeatureCase condition="multivariate-test-3" allowBreak>
+      <p>Multivariate Test 3 Rendered</p>
+    </FeatureCase>
+    <FeatureCase condition="multivariate-test-4" allowBreak>
+      <p>Multivariate Test 4 Rendered</p>
+    </FeatureCase>
+    <FeatureDefault>
+      <p>If no conditions are met then render the default</p>
+    </FeatureDefault>
   </FeatureSwitch>
 </FeatureFlag>
 ```
@@ -70,25 +97,32 @@ const applicationKeys = {
 
 ```jsx
 <FeatureFlag flagKey="integration-test" appFlags={applicationKeys}>
-  <FeatureTrue><p>If feature flag is true, then is content will render.</p></FeatureTrue>
-  <FeatureFalse><p>If feature flag is false, then is content will render.</p></FeatureFalse>
+  <FeatureTrue>
+    <p>If feature flag is true, then is content will render.</p>
+  </FeatureTrue>
+  <FeatureFalse>
+    <p>If feature flag is false, then is content will render.</p>
+  </FeatureFalse>
 </FeatureFlag>
 ```
 
 ### Another Use Case
-```js
-  const applicationKeys = {
-    'multivariate-test': 'multivariate-test-2',
-    'integration-test': true
-  };
-```  
 
-```jsx 
+```js
+const applicationKeys = {
+  'multivariate-test': 'multivariate-test-2',
+  'integration-test': true
+};
+```
+
+```jsx
 <FeatureFlag flagKey="false-test" appFlags={applicationKeys}>
   <p>This non-component should get rendered</p>
   This is also should get rendered.
   <FeatureTrue>This one should throw a warning and wont be rendred</FeatureTrue>
-  <FeatureFalse>this one should throw a warning and wont be rendred</FeatureFalse>
+  <FeatureFalse>
+    this one should throw a warning and wont be rendred
+  </FeatureFalse>
   <FeatureSwitch>
     <FeatureCase condition="multivariate-test-1" allowBreak>
       <p>This one should throw an error and wont be rendred</p>
@@ -100,15 +134,15 @@ const applicationKeys = {
 ### Nested FeatureFlag
 
 ```js
-  const applicationKeys = {
-    'multivariate-test': 'multivariate-test-2',
-    'integration-test': true
-  };
-```  
+const applicationKeys = {
+  'multivariate-test': 'multivariate-test-2',
+  'integration-test': true
+};
+```
 
-```jsx 
+```jsx
 <FeatureFlag flagKey="multivariate-test" appFlags={applicationKeys}>
- <p>This non-component will get rendered</p>
+  <p>This non-component will get rendered</p>
   <FeatureFlag flagKey="multivariate-test" appFlags={flags}>
     <FeatureSwitch>
       <FeatureCase condition="multivariate-test-1" allowBreak>
@@ -130,7 +164,7 @@ const applicationKeys = {
 
 ## Using the React Hooks
 
-```jsx 
+```jsx
 const appFlags = {
   a: 'a',
   b: 'b',
@@ -144,13 +178,26 @@ const UsingHooks = () => {
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Add count</button>
-      <FeatureFlag flagKey={String.fromCharCode(count).toLowerCase()} appFlags={appFlags} >
+      <FeatureFlag
+        flagKey={String.fromCharCode(count).toLowerCase()}
+        appFlags={appFlags}
+      >
         <FeatureSwitch>
-          <FeatureCase condition="a" allowBreak>A is being rendered</FeatureCase>
-          <FeatureCase condition="b" allowBreak>B is being rendered</FeatureCase>
-          <FeatureCase condition="c" allowBreak>C is being rendered</FeatureCase>
-          <FeatureCase condition="d" allowBreak>D is being rendered</FeatureCase>
-          <FeatureCase condition="e" allowBreak>E is being rendered</FeatureCase>
+          <FeatureCase condition="a" allowBreak>
+            A is being rendered
+          </FeatureCase>
+          <FeatureCase condition="b" allowBreak>
+            B is being rendered
+          </FeatureCase>
+          <FeatureCase condition="c" allowBreak>
+            C is being rendered
+          </FeatureCase>
+          <FeatureCase condition="d" allowBreak>
+            D is being rendered
+          </FeatureCase>
+          <FeatureCase condition="e" allowBreak>
+            E is being rendered
+          </FeatureCase>
           <FeatureDefault>No value matches, this is default</FeatureDefault>
         </FeatureSwitch>
       </FeatureFlag>
@@ -158,7 +205,6 @@ const UsingHooks = () => {
   );
 };
 ```
-
 
 ## Using the API
 
