@@ -67,7 +67,7 @@ jobs:
       - attach_workspace:
           at: ~/auto
       - run: *build
-      - run: *bundle
+      # - run: *bundle
       - persist_to_workspace:
           root: .
           paths:
