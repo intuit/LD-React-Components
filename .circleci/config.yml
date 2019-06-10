@@ -32,7 +32,7 @@ aliases:
     command: yarn test
   - &build
     name: Build
-    command: yarn prepare
+    command: yarn build
   # - &semver
   #   name: Check PR for semVer label
   #   command: yarn semver:check

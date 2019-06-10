@@ -15,7 +15,7 @@
     "registry": "https://registry.npmjs.com/"
   },
   "scripts": {
-    "prepare": "yarn build && yarn docs:build",
+    "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage",
     "test": "jest --coverage",
     "postpublish": "git push --follow-tags --set-upstream origin ${branch}",
