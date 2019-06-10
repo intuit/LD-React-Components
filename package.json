@@ -24,7 +24,7 @@
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
-    "docs:publish": "gh-pages --dist src/docs/dist",
+    "docs:publish": "push-dir --dir=src/docs/dist --branch=gh-pages",
     "dev": "yarn docs"
   },
   "keywords": [

@@ -104,15 +104,17 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run:
-          name: Install GH-Pages
-          command: |
-            npm install -g --silent gh-pages@2.0.1
-            git config user.email "dave@cmscode.com"
-            git config user.name "poorpaddy"
+          name: Build Docs
+          command:
+            yarn docs:build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - src/docs/dist
       - run:
           name: Publish Docs
           command: 
-            yarn docs:build && yarn docs:publish
+            yarn docs:publish
             
 
 workflows:
