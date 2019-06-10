@@ -25,7 +25,6 @@ log/
 /errorShots/
 /screenshots/
 stats.json
-package-lock.json
 # Build folder #
 local
 build
