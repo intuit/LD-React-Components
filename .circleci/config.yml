@@ -104,6 +104,11 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run: *build
+      # - run: *bundle
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
       - run:
           name: Publish Docs
           command: yarn docs:publish
