@@ -32,7 +32,7 @@ aliases:
     command: yarn test
   - &build
     name: Build
-    command: yarn build && yarn docs:build
+    command: yarn prepare
   # - &semver
   #   name: Check PR for semVer label
   #   command: yarn semver:check
@@ -105,9 +105,7 @@ jobs:
           at: ~/ld-react-components
       - run:
           name: Publish Docs
-          command: 
-            yarn docs:publish
-            
+          command: yarn docs:publish
 
 workflows:
   version: 2
