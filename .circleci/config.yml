@@ -33,6 +33,9 @@ aliases:
   - &build
     name: Build
     command: yarn build
+  - &builddocs
+    name: Build Docs
+    command: yarn docs:build
   # - &semver
   #   name: Check PR for semVer label
   #   command: yarn semver:check
@@ -65,7 +68,7 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run: *build
-      # - run: *bundle
+      - run: *builddocs
       - persist_to_workspace:
           root: .
           paths:
