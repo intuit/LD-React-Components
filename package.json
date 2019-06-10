@@ -24,7 +24,7 @@
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
-    "docs:publish": "push-dir --dir=src/docs/dist --branch=gh-pages",
+    "docs:publish": "gh-pages --dist src/docs/dist",
     "dev": "yarn docs"
   },
   "keywords": [
@@ -57,6 +57,7 @@
     "eslint-plugin-react": "~7.13.0",
     "eslint-plugin-standard": "~4.0.0",
     "expect": "^24.8.0",
+    "gh-pages": "2.0.1",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.8.0",
     "jsdom": "15.1.1",
