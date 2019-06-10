@@ -99,6 +99,8 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/ld-react-components
+      - run: git config user.email lisowski54@gmail.com
+      - run: git config user.name "Andrew Lisowski"  
       - run:
           name: Build Docs
           command: yarn docs:build
