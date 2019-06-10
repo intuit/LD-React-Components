@@ -103,6 +103,7 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/ld-react-components
+      - run: *build
       - run:
           name: Publish Docs
           command: yarn docs:publish
@@ -136,7 +137,6 @@ workflows:
 
       - publishDocs:
           requires:
-            - build
             - test
             - lint
           filters:

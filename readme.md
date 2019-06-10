@@ -244,7 +244,7 @@ getFeatureFlag(featureId, defaultValue = false) {
 
 ```shell
 yarn
-yarn test:jest
+yarn test
 ```
 
 ### For React
