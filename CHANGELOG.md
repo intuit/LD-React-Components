@@ -1,3 +1,15 @@
+# v0.0.2 (Mon Jun 10 2019)
+
+#### ⚠️  Pushed to master
+
+- initial commit  (dave@cmscode.com)
+
+#### Authors: 1
+
+- poorpaddy (dave@cmscode.com)
+
+---
+
 # v0.0.1 (Mon Jun 10 2019)
 
 #### 🐛  Bug Fix
