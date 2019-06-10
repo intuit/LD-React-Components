@@ -104,11 +104,10 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run:
-          name: Build Docs
-          command: yarn docs:build
-      - run:
           name: Publish Docs
-          command: yarn docs:publish
+          command: 
+            yarn docs:build
+            yarn docs:publish
 
 workflows:
   version: 2
