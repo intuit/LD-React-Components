@@ -136,6 +136,7 @@ workflows:
 
       - publishDocs:
           requires:
+            - build
             - test
             - lint
           filters:
