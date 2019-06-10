@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 /**
  * FeatureSwitch
@@ -37,10 +36,6 @@ function FeatureSwitch(props) {
   });
   return React.Children.map(childArray, (child, i) => child);
 }
-
-FeatureSwitch.propTypes = {
-  appFlags: PropTypes.object.isRequired
-};
 
 
 export default FeatureSwitch;
