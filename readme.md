@@ -4,7 +4,9 @@
   <h1>LD React Components</h1>
   <p>Semantic component helpers to support LaunchDarkly in your react app.</p>
 </div>
-<div align="center"><a href="https://circleci.com/gh/intuit/LD-React-Components"><img src="https://circleci.com/gh/intuit/LD-React-Components/tree/master.svg?style=svg&circle-token=df1c1f6aab7a369b9957bf8aaf8642e1c5b3dda5" alt="CircleCI" /></a></div>
+<div align="center">
+<a href="https://circleci.com/gh/intuit/LD-React-Components"><img src="https://circleci.com/gh/intuit/LD-React-Components/tree/master.svg?style=svg&circle-token=df1c1f6aab7a369b9957bf8aaf8642e1c5b3dda5" alt="CircleCI" /></a> <a href="https://www.npmjs.com/package/ld-react-components"><img src="https://img.shields.io/npm/v/auto.svg?style=flat-square&logo=npm" alt="npm" /></a> <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square&logo=github" alt="All Contributors" /></a> <a href="https://www.npmjs.com/package/ld-react-components"><img src="https://img.shields.io/npm/dt/auto.svg?style=flat-square&logo=npm" alt="npm" /></a> <a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fintuit%2Fauto?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fintuit%2Fauto.svg?type=shield"/></a> <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square&logo=producthunt" alt="code style: prettier" /></a>
+</div>
 
 ## Usage
 
