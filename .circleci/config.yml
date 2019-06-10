@@ -1,0 +1,134 @@
+version: 2.1
+
+defaults: &defaults
+  working_directory: ~/ld-react-components
+  docker:
+    - image: circleci/node:8.14-browsers
+
+aliases:
+  # Circle related commands
+  - &restore-cache
+    keys:
+      # Find a cache corresponding to this specific package.json checksum
+      # when this file is changed, this key will fail
+      - ld-react-components-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+      - ld-react-components-{{ checksum "yarn.lock" }}
+      # Find the most recent cache used from any branch
+      - ld-react-components-
+  - &save-cache
+    key: ld-react-components-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+    paths:
+      - ~/.cache/yarn
+      - node_modules
+  # Yarn commands
+  - &yarn
+    name: Install Dependencies
+    command: yarn install --frozen-lockfile --non-interactive --cache-folder=~/.cache/yarn
+  - &lint
+    name: Lint
+    command: yarn lint
+  - &test
+    name: Test
+    command: yarn test
+  - &build
+    name: Build
+    command: yarn build
+
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache: *restore-cache
+      - run: *yarn
+      - save_cache: *save-cache
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run: *build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run: *lint
+
+  test:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run: *test
+      # - run:
+      #     name: Send CodeCov Results
+      #     command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
+
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run: git config user.email lisowski54@gmail.com
+      - run: git config user.name "Andrew Lisowski"  
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: Release
+          command: yarn release
+
+  publishDocs:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run: git config user.email lisowski54@gmail.com
+      - run: git config user.name "Andrew Lisowski"  
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: Build Docs
+          command: yarn docs:build
+      - run:
+          name: Publish Docs
+          command: yarn docs:publish
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - install
+
+      - build:
+          requires:
+            - install
+
+      - lint:
+          requires:
+            - build
+
+      - test:
+          requires:
+            - build
+
+      - release:
+          requires:
+            - test
+            - lint
+
+      - publishDocs:
+          requires:
+            - release
+          filters:
+            branches:
+              only:
+                - master

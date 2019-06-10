@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+docs
+.babelrc
+webpack.config.js
+.vscode
+.eslintrc
+.npmrc
+test
+src
