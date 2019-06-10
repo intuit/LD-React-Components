@@ -114,7 +114,7 @@ jobs:
       - run:
           name: Publish Docs
           command: 
-            yarn docs:publish
+            yarn docs:publish -verbose
             
 
 workflows:
