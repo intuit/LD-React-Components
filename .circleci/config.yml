@@ -106,8 +106,8 @@ jobs:
       - run:
           name: Publish Docs
           command: 
-            yarn docs:build
-            yarn docs:publish
+            yarn docs:build && yarn docs:publish
+            
 
 workflows:
   version: 2
