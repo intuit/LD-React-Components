@@ -33,17 +33,8 @@ aliases:
   - &build
     name: Build
     command: yarn build
-  # - &semver
-  #   name: Check PR for semVer label
-  #   command: yarn semver:check
 
 jobs:
-  # semver:
-  #   <<: *defaults
-  #   steps:
-  #     - checkout
-  #     - run: *semver
-
   install:
     <<: *defaults
     steps:
@@ -84,15 +75,17 @@ jobs:
       #     name: Send CodeCov Results
       #     command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
 
-  # release:
-  #   <<: *defaults
-  #   steps:
-  #     - attach_workspace:
-  #         at: ~/ld-react-components
-  #     - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
-  #     - run:
-  #         name: Release
-  #         command: yarn run release
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/ld-react-components
+      - run: git config user.email lisowski54@gmail.com
+      - run: git config user.name "Andrew Lisowski"  
+      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: Release
+          command: yarn release
 
   publishDocs:
     <<: *defaults
@@ -119,10 +112,6 @@ workflows:
           requires:
             - install
 
-      # - semver: 
-      #     requires:
-      #       - build
-
       - lint:
           requires:
             - build
@@ -131,15 +120,14 @@ workflows:
           requires:
             - build
 
-      # - release:
-      #     requires:
-      #       - test
-      #       - lint
-
-      - publishDocs:
+      - release:
           requires:
             - test
             - lint
+
+      - publishDocs:
+          requires:
+            - release
           filters:
             branches:
               only:

@@ -1,6 +1,6 @@
 {
   "name": "ld-react-components",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Semantic component helpers to support LaunchDarkly in your react app.",
   "main": "dist/index.js",
   "author": {
@@ -25,7 +25,8 @@
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
     "docs:publish": "push-dir --dir=src/docs/dist --branch=gh-pages --cleanup --verbose",
-    "dev": "yarn docs"
+    "dev": "yarn docs",
+    "release": "auto shipit"
   },
   "keywords": [
     "launch-darkly",
@@ -41,6 +42,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "auto": "^7.0.12",
     "babel-eslint": "^10.0.1",
     "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
