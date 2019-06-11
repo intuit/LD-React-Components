@@ -10,6 +10,31 @@
   "imageSize": 100,
   "commit": true,
   "commitConvention": "none",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "poorpaddy",
+      "name": "Dave Bergschneider",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2213076?v=4",
+      "profile": "http://www.cmscode.com",
+      "contributions": [
+        "code",
+        "content",
+        "design",
+        "doc",
+        "example",
+        "maintenance",
+        "test"
+      ]
+    },
+    {
+      "login": "hipstersmoothie",
+      "name": "Andrew Lisowski",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1192452?v=4",
+      "profile": "http://hipstersmoothie.com",
+      "contributions": [
+        "infra"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
