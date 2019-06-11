@@ -1,3 +1,15 @@
+# v0.0.4 (Tue Jun 11 2019)
+
+#### 🐛  Bug Fix
+
+- Readme updates [#2](https://github.com/intuit/LD-React-Components/pull/2) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v0.0.2 (Mon Jun 10 2019)
 
 #### ⚠️  Pushed to master
