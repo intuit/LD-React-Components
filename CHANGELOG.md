@@ -1,3 +1,15 @@
+# v0.0.8 (Tue Jun 11 2019)
+
+#### ⚠️  Pushed to master
+
+- updated circleci config  (dave_bergschneider@intuit.com)
+
+#### Authors: 1
+
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+
+---
+
 # v0.0.7 (Tue Jun 11 2019)
 
 #### 🐛  Bug Fix
