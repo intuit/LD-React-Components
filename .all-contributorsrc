@@ -4,8 +4,7 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [
-    "README.md",
-    "y"
+    "readme.md"
   ],
   "imageSize": 100,
   "commit": true,
@@ -18,21 +17,10 @@
       "profile": "http://www.cmscode.com",
       "contributions": [
         "code",
-        "content",
         "design",
         "doc",
         "example",
-        "maintenance",
-        "test"
-      ]
-    },
-    {
-      "login": "hipstersmoothie",
-      "name": "Andrew Lisowski",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/1192452?v=4",
-      "profile": "http://hipstersmoothie.com",
-      "contributions": [
-        "infra"
+        "maintenance"
       ]
     }
   ],
