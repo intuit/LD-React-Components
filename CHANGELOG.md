@@ -1,3 +1,15 @@
+# v0.0.7 (Tue Jun 11 2019)
+
+#### 🐛  Bug Fix
+
+- Added contributors section, license and updated some badges [#3](https://github.com/intuit/LD-React-Components/pull/3) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v0.0.6 (Tue Jun 11 2019)
 
 #### ⚠️  Pushed to master
