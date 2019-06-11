@@ -71,9 +71,9 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run: *test
-      # - run:
-      #     name: Send CodeCov Results
-      #     command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
+      - run:
+          name: Send CodeCov Results
+          command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
 
   release:
     <<: *defaults

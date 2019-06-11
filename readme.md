@@ -1,10 +1,11 @@
 <div align="center">
   <img width="267" height="136"
-    src="./ld-react-components.png">
+    src="https://raw.githubusercontent.com/intuit/LD-React-Components/readme-updates/ld-react-components.png?token=AAQ4JVDK2HU6BW3BFQJPDT25BAM4O">
   <h1>LD React Components</h1>
   <p>Semantic component helpers to support LaunchDarkly in your react app.</p>
 </div>
-<div align="center"><a href="https://circleci.com/gh/intuit/LD-React-Components"><img src="https://circleci.com/gh/intuit/LD-React-Components/tree/master.svg?style=svg&circle-token=df1c1f6aab7a369b9957bf8aaf8642e1c5b3dda5" alt="CircleCI" /></a></div>
+
+<div align="center"><a href="https://circleci.com/gh/intuit/LD-React-Components"><img alt="CircleCI" src="https://img.shields.io/circleci/build/github/intuit/LD-React-Components.svg?style=flat-square&logo=circleci&token=df1c1f6aab7a369b9957bf8aaf8642e1c5b3dda5"></a> <a href="https://codecov.io/gh/intuit/LD-React-Components"><img src="https://img.shields.io/codecov/c/github/intuit/LD-React-Components.svg?style=flat-square&logo=codecov" alt="Codecov" /></a> <a href="https://www.npmjs.com/package/LD-React-Components"><img src="https://img.shields.io/npm/v/ld-react-components.svg?style=flat-square&logo=npm" alt="npm" /></a> <a href="https://www.npmjs.com/package/ld-react-components"><img src="https://img.shields.io/npm/dt/ld-react-components.svg?style=flat-square&logo=npm" alt="npm" /></a> <a href="https://app.snyk.io/org/poorpaddy/project/c1415dab-3e6f-4438-8e73-26a3e5ce9f55"><img src="https://img.shields.io/snyk/vulnerabilities/github/intuit/LD-React-Components/package.json.svg?style=flat-square&logo=snyk&logoColor=lightgrey" alt="" /></a> <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components.svg?type=shield"/></a></div>
 
 ## Usage
 
