@@ -1,0 +1,37 @@
+{
+  "projectName": "LD-React-Components",
+  "projectOwner": "intuit",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "readme.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "poorpaddy",
+      "name": "Dave Bergschneider",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2213076?v=4",
+      "profile": "http://www.cmscode.com",
+      "contributions": [
+        "code",
+        "design",
+        "doc",
+        "example",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "hipstersmoothie",
+      "name": "Andrew Lisowski",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1192452?v=4",
+      "profile": "http://hipstersmoothie.com",
+      "contributions": [
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
