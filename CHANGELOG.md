@@ -1,3 +1,15 @@
+# v0.0.5 (Tue Jun 11 2019)
+
+#### ⚠️  Pushed to master
+
+- fixing codecov and main image  (dave@cmscode.com)
+
+#### Authors: 1
+
+- poorpaddy (dave@cmscode.com)
+
+---
+
 # v0.0.4 (Tue Jun 11 2019)
 
 #### 🐛  Bug Fix
