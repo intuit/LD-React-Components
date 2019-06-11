@@ -267,6 +267,7 @@ To see the demo go to http://localhost:8080
 <table>
   <tr>
     <td align="center"><a href="http://www.cmscode.com"><img src="https://avatars3.githubusercontent.com/u/2213076?v=4" width="100px;" alt="Dave Bergschneider"/><br /><sub><b>Dave Bergschneider</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=poorpaddy" title="Code">💻</a> <a href="#design-poorpaddy" title="Design">🎨</a> <a href="https://github.com/intuit/LD-React-Components/commits?author=poorpaddy" title="Documentation">📖</a> <a href="#example-poorpaddy" title="Examples">💡</a> <a href="#maintenance-poorpaddy" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://hipstersmoothie.com"><img src="https://avatars3.githubusercontent.com/u/1192452?v=4" width="100px;" alt="Andrew Lisowski"/><br /><sub><b>Andrew Lisowski</b></sub></a><br /><a href="#infra-hipstersmoothie" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
   </tr>
 </table>
 
