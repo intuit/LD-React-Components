@@ -48,14 +48,14 @@ class LDApi {
       throw new Error('There was no environment key provided.');
     }
 
-    let ldUser = {
+    const ldUser = {
       key: hash.sha256().update(user.authId).digest('hex'),
       custom: {}
     };
 
     // take whatever is in the tags object and put it into the user object
     if (user !== undefined) {
-      for (let key in user) {
+      for (const key in user) {
         let userKey = key;
         if (key.indexOf('_') > -1) {
           userKey = key.replace('_', '');
@@ -81,7 +81,7 @@ class LDApi {
      */
   handleEvents(timeout, ldClient, logUpdates = false, resolve, reject) {
     if (ldClient === undefined) {
-      let error = new Error('ERROR: ldClient is undefined');
+      const error = new Error('ERROR: ldClient is undefined');
       if (reject !== undefined) {
         return reject(error);
       } else {
@@ -89,9 +89,9 @@ class LDApi {
       }
     }
 
-    let initTimeout = setTimeout(() => {
+    const initTimeout = setTimeout(() => {
       clearTimeout(initTimeout);
-      let error = new Error('ERROR: Creation of Launch Darkly client has timed out');
+      const error = new Error('ERROR: Creation of Launch Darkly client has timed out');
       if (reject !== undefined) {
         return reject(error);
       } else {
