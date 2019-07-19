@@ -1,3 +1,17 @@
+# v0.0.9 (Fri Jul 19 2019)
+
+#### ⚠️  Pushed to master
+
+- corrected linting errors  (dave@cmscode.com)
+- updated dependencies  (dave@cmscode.com)
+
+#### Authors: 2
+
+- poorpaddy (dave@cmscode.com)
+- poorpaddu (dave@cmscode.com)
+
+---
+
 # v0.0.8 (Tue Jun 11 2019)
 
 #### ⚠️  Pushed to master
