@@ -1,3 +1,15 @@
+# v0.0.10 (Wed Sep 11 2019)
+
+#### 🐛  Bug Fix
+
+- feat: update the plugin for the new feature flag payload and update tests [#4](https://github.com/intuit/LD-React-Components/pull/4) ([@Buranch](https://github.com/Buranch))
+
+#### Authors: 1
+
+- Buranch ([@Buranch](https://github.com/Buranch))
+
+---
+
 # v0.0.9 (Fri Jul 19 2019)
 
 #### ⚠️  Pushed to master
