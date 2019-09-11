@@ -19,7 +19,7 @@ function FeatureSwitch(props) {
       !breakIt
     ) {
       const { condition, allowBreak } = element.props;
-      if (appFlags[flagKey] === condition) {
+      if ((appFlags[flagKey] && appFlags[flagKey].value) === condition) {
         childArray.push(element);
         breakIt = allowBreak;
       }

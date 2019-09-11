@@ -60,8 +60,8 @@ Takes `flagKey` and `appFlags` as `props`, which is an object containing list of
 
 ```jsx
 const applicationKeys = {
-  'integration-test': true,
-  'multivariate-test': 'multivariate-test-1'
+  'integration-test': { value: true, version: 3 },
+  'multivariate-test': { value: 'multivariate-test-1', version: 5 }
 }
 <FeatureFlag flagKey="multivariate-test" appFlags={applicationKeys}></FeatureFlag>
 ```
@@ -112,8 +112,8 @@ const applicationKeys = {
 
 ```js
 const applicationKeys = {
-  'multivariate-test': 'multivariate-test-2',
-  'integration-test': true
+  'multivariate-test': { value: 'multivariate-test-2', version: 1},
+  'integration-test': { value: true }
 };
 ```
 
@@ -137,8 +137,8 @@ const applicationKeys = {
 
 ```js
 const applicationKeys = {
-  'multivariate-test': 'multivariate-test-2',
-  'integration-test': true
+  'multivariate-test': { value: 'multivariate-test-2' },
+  'integration-test': { value: true }
 };
 ```
 
@@ -168,11 +168,11 @@ const applicationKeys = {
 
 ```jsx
 const appFlags = {
-  a: 'a',
-  b: 'b',
-  c: 'c',
-  d: 'd',
-  e: 'e'
+  a: { value: 'a' },
+  b: { value: 'b' },
+  c: { value: 'c' },
+  d: { value: 'd' },
+  e: { value: 'e' }
 };
 
 const UsingHooks = () => {

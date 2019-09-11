@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Launch Darkly Plugin  FeatureFlag: should not render component if flagKey does not exist in appFlags object  1`] = `""`;
+
+exports[`Launch Darkly Plugin  FeatureFlag: should not render component if flagKey value is false in appFlags object  1`] = `""`;
+
+exports[`Launch Darkly Plugin  FeatureFlag: should not render either FeatureTrue or FeatureFalse when it gets mixed with NonPluginElement and should throw a warnring 1`] = `
+"<div>
+  Non Plugin Element
+</div>"
+`;
+
+exports[`Launch Darkly Plugin  FeatureFlag: should not render the FeatureSwitch and throw a warning when FeatureSwitch gets mixed with NonPlugin elements 1`] = `
+"<FeatureFlag appFlags={{...}} flagKey=\\"switcher\\">
+  <div id=\\"hello\\">
+    Hello
+  </div>
+</FeatureFlag>"
+`;
+
+exports[`Launch Darkly Plugin  FeatureFlag: should render component if flagKey value is true in appFlags object  1`] = `
+"<div id=\\"hello\\">
+  hello
+</div>"
+`;
+
+exports[`Launch Darkly Plugin  FeatureFlag: should render only the FeatureFalse when flagKey value is false 1`] = `
+"<FeatureFlag appFlags={{...}} flagKey=\\"b\\">
+  <FeatureFalse>
+    <div>
+      Gets rendered when flagKey value is false
+    </div>
+  </FeatureFalse>
+</FeatureFlag>"
+`;
+
+exports[`Launch Darkly Plugin  FeatureFlag: should render only the FeatureTrue when flagKey value is true 1`] = `
+"<FeatureFlag appFlags={{...}} flagKey=\\"a\\">
+  <FeatureTrue>
+    <div>
+      Gets rendered when flagKey value is true
+    </div>
+  </FeatureTrue>
+</FeatureFlag>"
+`;
+
+exports[`Launch Darkly Plugin  FeatureSwitch: renders the FeatureCase component that matches the flagKey  1`] = `
+"<FeatureFlag appFlags={{...}} flagKey=\\"switcher\\">
+  <FeatureSwitch flagKey=\\"switcher\\" appFlags={{...}}>
+    <FeatureCase condition=\\"switch\\" allowBreak={true}>
+      <p>
+        Multivariate Test 1 Rendered
+      </p>
+    </FeatureCase>
+  </FeatureSwitch>
+</FeatureFlag>"
+`;
+
+exports[`Launch Darkly Plugin  FeatureSwitch: renders the FeatureDefault component when the no FeatureCase found that matches the flagKey  1`] = `
+"<FeatureFlag appFlags={{...}} flagKey=\\"switcher\\">
+  <FeatureSwitch flagKey=\\"switcher\\" appFlags={{...}}>
+    <FeatureDefault>
+      <p>
+        If no conditions are met then render the default
+      </p>
+    </FeatureDefault>
+  </FeatureSwitch>
+</FeatureFlag>"
+`;
