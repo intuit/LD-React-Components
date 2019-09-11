@@ -1,114 +1,176 @@
-/* eslint-disable indent */
 import React from 'react';
-import { expect } from 'chai';
 import Enzyme, { mount, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
-import { FeatureTrue, FeatureFlag, FeatureFalse, FeatureSwitch, FeatureCase, FeatureDefault } from '../src/lib/index';
+import {
+  FeatureTrue,
+  FeatureFlag,
+  FeatureFalse,
+  FeatureSwitch,
+  FeatureCase,
+  FeatureDefault
+} from '../src/lib/index';
+
 Enzyme.configure({ adapter: new Adapter() });
 
-
-
 const appFlags = {
-  'a': true,
-  'b': true,
-  'switcher': 'switch'
+  a: {
+    value: true,
+    version: 4,
+    variation: 0,
+    trackEvents: false
+  },
+  b: {
+    value: false,
+    version: 5,
+    variation: 0,
+    trackEvents: false
+  },
+  switcher: {
+    value: 'switch',
+    version: 5,
+    variation: 0,
+    trackEvents: false
+  }
 };
 
-
-
-
 describe('Launch Darkly Plugin ', () => {
-  it('FeatureFlag: should render component with FeatureTrue ', () => {
+  it.only('FeatureFlag: should render component if flagKey value is true in appFlags object ', () => {
     const component = shallow(
       <FeatureFlag appFlags={appFlags} flagKey="a">
-        <div>hello</div>
-        <FeatureTrue><div>Hello there</div></FeatureTrue>
-
+        <div id="hello">hello</div>
       </FeatureFlag>
     );
-    expect(component.exists()).to.equal(true);
+    expect(component.exists()).toBe(true);
+    expect(component.find('#hello').exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
   });
 
-  it('FeatureFlag: should render component with FeatureTrue where flagKey doesnt much', () => {
+  it.only('FeatureFlag: should not render component if flagKey value is false in appFlags object ', () => {
     const component = shallow(
-      <FeatureFlag appFlags={appFlags} flagKey="asdf">
-        <div>hello</div>
-        <FeatureTrue><div>Hello there</div></FeatureTrue>
-
+      <FeatureFlag appFlags={appFlags} flagKey="b">
+        <div id="hello">hello</div>
       </FeatureFlag>
     );
-    expect(component.exists()).to.equal(false);
+    expect(component.exists()).toBe(false);
+    expect(component.debug()).toMatchSnapshot();
   });
 
-  it('FeatureFlag: should render component with FeatureTrue and NonPluginElement should throw error', () => {
-    const component = mount(
-      <FeatureFlag appFlags={appFlags} flagKey="a">
-        <FeatureTrue><div>Hello there</div></FeatureTrue>
-        <div>Non Plugin Element</div>
-        <FeatureTrue><div>Hello there</div></FeatureTrue>
-      </FeatureFlag>
-    );
-    expect(component.exists()).to.equal(true);
-  });
-
-  it('FeatureFlag: should render component with FeatureFalse ', () => {
+  it.only('FeatureFlag: should not render component if flagKey does not exist in appFlags object ', () => {
     const component = shallow(
-      <FeatureFlag appFlags={appFlags} flagKey="a">
-        <div>hello</div>
-        <FeatureFalse><div>Hello there</div></FeatureFalse>
-
-      </FeatureFlag>
-    );
-    expect(component.exists()).to.equal(true);
-  });
-  it('FeatureFlag: should render component with FeatureFalse and NonPluginElement should throw error', () => {
-    const component = mount(
       <FeatureFlag appFlags={appFlags} flagKey="c">
-        <FeatureFalse><div>Hello there</div></FeatureFalse>
+        <div id="hello">hello</div>
+      </FeatureFlag>
+    );
+    expect(component.exists()).toBe(false);
+    expect(component.debug()).toMatchSnapshot();
+  });
+
+  it.only('FeatureFlag: should render only the FeatureTrue when flagKey value is true', () => {
+    const component = mount(
+      <FeatureFlag appFlags={appFlags} flagKey="a">
+        <FeatureTrue>
+          <div>Gets rendered when flagKey value is true</div>
+        </FeatureTrue>
+        <FeatureFalse>
+          <div>Gets rendered when flagKey value is false</div>
+        </FeatureFalse>
+      </FeatureFlag>
+    );
+    expect(component.exists()).toBe(true);
+    expect(component.find('FeatureTrue').exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
+  });
+
+  it.only('FeatureFlag: should render only the FeatureFalse when flagKey value is false', () => {
+    const component = mount(
+      <FeatureFlag appFlags={appFlags} flagKey="b">
+        <FeatureTrue>
+          <div>Gets rendered when flagKey value is true</div>
+        </FeatureTrue>
+        <FeatureFalse>
+          <div>Gets rendered when flagKey value is false</div>
+        </FeatureFalse>
+      </FeatureFlag>
+    );
+    expect(component.exists()).toBe(true);
+    expect(component.find('FeatureFalse').exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
+  });
+
+  it.only('FeatureFlag: should not render either FeatureTrue or FeatureFalse when it gets mixed with NonPluginElement and should throw a warnring', () => {
+    const component = shallow(
+      <FeatureFlag appFlags={appFlags} flagKey="a">
         <div>Non Plugin Element</div>
-        <FeatureFalse><div>Hello there</div></FeatureFalse>
+        <FeatureTrue>
+          <div>Hello there</div>
+        </FeatureTrue>
       </FeatureFlag>
     );
-    expect(component.exists()).to.equal(true);
+    expect(component.exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
   });
 
-  it('FeatureSwitch: should render component ', () => {
+  it.only('FeatureSwitch: renders the FeatureCase component that matches the flagKey ', () => {
     const component = mount(
       <FeatureFlag appFlags={appFlags} flagKey="switcher">
         <FeatureSwitch>
-            <FeatureCase condition="switch" allowBreak><p>Multivariate Test 1 Rendered</p></FeatureCase>
-            <FeatureCase condition="a" allowBreak><p>Multivariate Test 2 Rendered</p></FeatureCase>
-            <FeatureDefault><p>If no conditions are met then render the default</p></FeatureDefault>
+          <FeatureCase condition="switch" allowBreak>
+            <p>Multivariate Test 1 Rendered</p>
+          </FeatureCase>
+          <FeatureCase condition="a" allowBreak>
+            <p>Multivariate Test 2 Rendered</p>
+          </FeatureCase>
+          <FeatureDefault>
+            <p>If no conditions are met then render the default</p>
+          </FeatureDefault>
         </FeatureSwitch>
       </FeatureFlag>
     );
-    expect(component.exists()).to.equal(true);
+    expect(component.exists()).toBe(true);
+    expect(component.find({ condition: 'switch' }).exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
   });
 
-  it('FeatureSwitch: should render component throws warning for mixed', () => {
-    const component = mount(
-      <FeatureFlag appFlags={appFlags} flagKey="switcher">
-        <div>Hello</div>
-        <FeatureSwitch>
-            <FeatureCase condition="switch" allowBreak><p>Multivariate Test 1 Rendered</p></FeatureCase>
-            <FeatureCase condition="a" allowBreak><p>Multivariate Test 2 Rendered</p></FeatureCase>
-            <FeatureDefault><p>If no conditions are met then render the default</p></FeatureDefault>
-        </FeatureSwitch>
-      </FeatureFlag>
-    );
-    expect(component.exists()).to.equal(true);
-  });
-
-  it('FeatureSwitch: should render component throws warning for mixed', () => {
+  it.only('FeatureSwitch: renders the FeatureDefault component when the no FeatureCase found that matches the flagKey ', () => {
     const component = mount(
       <FeatureFlag appFlags={appFlags} flagKey="switcher">
         <FeatureSwitch>
-            <FeatureCase condition="swch" allowBreak><p>Multivariate Test 1 Rendered</p></FeatureCase>
-            <FeatureCase condition="a" allowBreak><p>Multivariate Test 2 Rendered</p></FeatureCase>
-            <FeatureDefault><p>If no conditions are met then render the default</p></FeatureDefault>
+          <FeatureCase condition="aa" allowBreak>
+            <p>Multivariate Test 1 Rendered</p>
+          </FeatureCase>
+          <FeatureCase condition="acc" allowBreak>
+            <p>Multivariate Test 2 Rendered</p>
+          </FeatureCase>
+          <FeatureDefault>
+            <p>If no conditions are met then render the default</p>
+          </FeatureDefault>
         </FeatureSwitch>
       </FeatureFlag>
     );
-    expect(component.exists()).to.equal(true);
+    expect(component.exists()).toBe(true);
+    expect(component.find('FeatureDefault').exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
+  });
+
+  it.only('FeatureFlag: should not render the FeatureSwitch and throw a warning when FeatureSwitch gets mixed with NonPlugin elements', () => {
+    const component = mount(
+      <FeatureFlag appFlags={appFlags} flagKey="switcher">
+        <div id="hello">Hello</div>
+        <FeatureSwitch>
+          <FeatureCase condition="switch" allowBreak>
+            <p>Multivariate Test 1 Rendered</p>
+          </FeatureCase>
+          <FeatureCase condition="a" allowBreak>
+            <p>Multivariate Test 2 Rendered</p>
+          </FeatureCase>
+          <FeatureDefault>
+            <p>If no conditions are met then render the default</p>
+          </FeatureDefault>
+        </FeatureSwitch>
+      </FeatureFlag>
+    );
+    expect(component.exists()).toBe(true);
+    expect(component.find({ id: 'hello' }).exists()).toBe(true);
+    expect(component.debug()).toMatchSnapshot();
   });
 });
