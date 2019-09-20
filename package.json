@@ -18,7 +18,6 @@
     "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage",
     "test": "jest --coverage",
-    "postpublish": "git push --follow-tags --set-upstream origin ${branch}",
     "lint": "eslint --ext .js src/",
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
