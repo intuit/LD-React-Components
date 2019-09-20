@@ -1,3 +1,15 @@
+# v1.0.0 (Fri Sep 20 2019)
+
+#### 💥  Breaking Change
+
+- updated npm dependencies and correct package link on npm badge [#6](https://github.com/intuit/LD-React-Components/pull/6) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v0.0.10 (Wed Sep 11 2019)
 
 #### 🐛  Bug Fix
