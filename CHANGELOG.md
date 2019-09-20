@@ -1,3 +1,15 @@
+# v1.0.1 (Fri Sep 20 2019)
+
+#### 🐛  Bug Fix
+
+- re-added gh-pages packages to troubleshoot doc builds [#9](https://github.com/intuit/LD-React-Components/pull/9) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.0 (Fri Sep 20 2019)
 
 #### 💥  Breaking Change
