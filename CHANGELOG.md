@@ -1,3 +1,39 @@
+# v1.0.1 (Fri Sep 20 2019)
+
+#### 🐛  Bug Fix
+
+- re-added gh-pages packages to troubleshoot doc builds [#9](https://github.com/intuit/LD-React-Components/pull/9) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
+# v1.0.0 (Fri Sep 20 2019)
+
+#### 💥  Breaking Change
+
+- updated npm dependencies and correct package link on npm badge [#6](https://github.com/intuit/LD-React-Components/pull/6) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
+# v0.0.10 (Wed Sep 11 2019)
+
+#### 🐛  Bug Fix
+
+- feat: update the plugin for the new feature flag payload and update tests [#4](https://github.com/intuit/LD-React-Components/pull/4) ([@Buranch](https://github.com/Buranch))
+
+#### Authors: 1
+
+- Buranch ([@Buranch](https://github.com/Buranch))
+
+---
+
 # v0.0.9 (Fri Jul 19 2019)
 
 #### ⚠️  Pushed to master
