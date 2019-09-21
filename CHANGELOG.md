@@ -1,3 +1,15 @@
+# v1.0.3 (Sat Sep 21 2019)
+
+#### 🐛  Bug Fix
+
+- Bump version to: 1.0.3 [#13](https://github.com/intuit/LD-React-Components/pull/13) ([@Buranch](https://github.com/Buranch))
+
+#### Authors: 1
+
+- Buranch ([@Buranch](https://github.com/Buranch))
+
+---
+
 # v1.0.2 (Sat Sep 21 2019)
 
 #### 🐛  Bug Fix
