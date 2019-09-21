@@ -1,3 +1,15 @@
+# v1.0.2 (Sat Sep 21 2019)
+
+#### 🐛  Bug Fix
+
+- gh-pages [#12](https://github.com/intuit/LD-React-Components/pull/12) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.1 (Fri Sep 20 2019)
 
 #### 🐛  Bug Fix
