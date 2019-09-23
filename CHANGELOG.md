@@ -1,3 +1,15 @@
+# v1.0.5 (Mon Sep 23 2019)
+
+#### ⚠️  Pushed to master
+
+- NPM Dependencies `  (dave@cmscode.com)
+
+#### Authors: 1
+
+- poorpaddy (dave@cmscode.com)
+
+---
+
 # v1.0.3 (Sat Sep 21 2019)
 
 #### 🐛  Bug Fix
