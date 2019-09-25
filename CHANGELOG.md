@@ -1,3 +1,15 @@
+# v1.0.6 (Wed Sep 25 2019)
+
+#### 🐛  Bug Fix
+
+- --force for push-dir [#15](https://github.com/intuit/LD-React-Components/pull/15) ([@vvscode](https://github.com/vvscode))
+
+#### Authors: 1
+
+- Vasiliy Vanchuk ([@vvscode](https://github.com/vvscode))
+
+---
+
 # v1.0.5 (Mon Sep 23 2019)
 
 #### ⚠️  Pushed to master
