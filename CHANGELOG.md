@@ -1,3 +1,16 @@
+# v1.0.11 (Fri Sep 27 2019)
+
+#### ⚠️  Pushed to master
+
+- custom commit message  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- fix docs  ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.10 (Fri Sep 27 2019)
 
 #### ⚠️  Pushed to master
