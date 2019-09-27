@@ -1,4 +1,4 @@
-[](# What Changed
+# What Changed
 
 # Why
 
