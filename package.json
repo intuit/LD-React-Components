@@ -23,7 +23,7 @@
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
-    "docs:publish": "push-dir --cleanup --dir=src/docs/dist --branch=gh-pages",
+    "docs:publish": "push-dir --cleanup --dir=src/docs/dist --branch=gh-pages --message='Update Docs [skip ci]'",
     "dev": "yarn docs",
     "release": "auto shipit"
   },
