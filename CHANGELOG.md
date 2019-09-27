@@ -1,3 +1,15 @@
+# v1.0.10 (Fri Sep 27 2019)
+
+#### ⚠️  Pushed to master
+
+- corrected script name  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.9 (Fri Sep 27 2019)
 
 #### ⚠️  Pushed to master
