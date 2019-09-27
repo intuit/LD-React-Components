@@ -23,7 +23,7 @@
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
-    "docs:publish": "push-dir --dir=src/docs/dist --branch=gh-pages -m 'auto commit [ci skip]' --cleanup --verbose --force",
+    "docs:publish": "git subtree push --prefix src/docs/dist gh-pages -m 'auto commit [ci skip]'",
     "dev": "yarn docs",
     "release": "auto shipit"
   },
