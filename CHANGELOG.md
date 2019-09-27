@@ -1,3 +1,16 @@
+# v1.0.8 (Fri Sep 27 2019)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of https://github.com/intuit/LD-React-Components  ([@poorpaddy](https://github.com/poorpaddy))
+- changed docs publish command  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.6 (Wed Sep 25 2019)
 
 #### 🐛  Bug Fix
