@@ -1,3 +1,19 @@
+# v1.0.7 (Fri Sep 27 2019)
+
+#### 🐛  Bug Fix
+
+- adding skip message [#16](https://github.com/intuit/LD-React-Components/pull/16) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### ⚠️  Pushed to master
+
+- changed docs publish command  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.6 (Wed Sep 25 2019)
 
 #### 🐛  Bug Fix
