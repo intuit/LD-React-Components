@@ -1,3 +1,15 @@
+# v1.0.12 (Fri Sep 27 2019)
+
+#### 🐛  Bug Fix
+
+- Update readme badge [#17](https://github.com/intuit/LD-React-Components/pull/17) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.11 (Fri Sep 27 2019)
 
 #### ⚠️  Pushed to master
