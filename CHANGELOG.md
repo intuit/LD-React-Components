@@ -1,3 +1,15 @@
+# v1.0.15 (Tue Oct 01 2019)
+
+#### 🐛  Bug Fix
+
+- Fixing Contribution Generation issue [#24](https://github.com/intuit/LD-React-Components/pull/24) ([@hjaintech](https://github.com/hjaintech))
+
+#### Authors: 1
+
+- Harshit Jain ([@hjaintech](https://github.com/hjaintech))
+
+---
+
 # v1.0.13 (Tue Oct 01 2019)
 
 #### 🐛  Bug Fix
