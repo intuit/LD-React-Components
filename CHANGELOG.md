@@ -1,3 +1,21 @@
+# v1.0.13 (Tue Oct 01 2019)
+
+#### 🐛  Bug Fix
+
+- updated all dependencies [#21](https://github.com/intuit/LD-React-Components/pull/21) ([@zjael](https://github.com/zjael) dave_bergschneider@intuit.com)
+
+#### ⚠️  Pushed to master
+
+- fixes lock file  (dave_bergschneider@intuit.com)
+- Merge branch 'master' of https://github.com/intuit/LD-React-Components  (dave_bergschneider@intuit.com)
+
+#### Authors: 2
+
+- Jakob S ([@zjael](https://github.com/zjael))
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+
+---
+
 # v1.0.12 (Fri Sep 27 2019)
 
 #### 🐛  Bug Fix
