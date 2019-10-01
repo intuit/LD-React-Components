@@ -49,6 +49,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "ConorGrocock",
+      "name": "Conor Grocock",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/15091494?v=4",
+      "profile": "http://grocock.email",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
