@@ -60,7 +60,7 @@
     "@auto-it/core" "^7.6.2"
     deepmerge "^4.0.0"
 
-"@babel/cli@^7.6.0":
+"@babel/cli@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.6.2.tgz#4ce8b5b4b2e4b4c1b7bd841cec62085e2dfc4465"
   integrity sha512-JDZ+T/br9pPfT2lmAMJypJDTTTHM9ePD/ED10TRjRzJVdEVy+JB3iRlhzYmTt5YkNgHvxWGlUVnLtdv6ruiDrQ==
@@ -84,7 +84,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@^7.1.0", "@babel/core@^7.6.0":
+"@babel/core@^7.1.0", "@babel/core@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.6.2.tgz#069a776e8d5e9eefff76236bc8845566bd31dd91"
   integrity sha512-l8zto/fuoZIbncm+01p8zPSDZu/VuuJhAfA7d/AbzM09WR7iVhavvfNDYCNpo1VvLk6E6xgAoP9P+/EMJHuRkQ==
@@ -345,7 +345,7 @@
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-json-strings" "^7.2.0"
 
-"@babel/plugin-proposal-object-rest-spread@^7.5.5", "@babel/plugin-proposal-object-rest-spread@^7.6.2":
+"@babel/plugin-proposal-object-rest-spread@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/plugin-proposal-object-rest-spread/-/plugin-proposal-object-rest-spread-7.6.2.tgz#8ffccc8f3a6545e9f78988b6bf4fe881b88e8096"
   integrity sha512-LDBXlmADCsMZV1Y9OQwMc0MyGZ8Ta/zlD9N67BfQT8uYwkRswiu2hU6nJKrjrt/58aH/vqfQlR/9yId/7A2gWw==
@@ -690,7 +690,7 @@
     "@babel/helper-regex" "^7.4.4"
     regexpu-core "^4.6.0"
 
-"@babel/preset-env@^7.6.0":
+"@babel/preset-env@^7.6.2":
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.6.2.tgz#abbb3ed785c7fe4220d4c82a53621d71fc0c75d3"
   integrity sha512-Ru7+mfzy9M1/YTEtlDS8CD45jd22ngb9tXnn64DvQK3ooyqSw9K4K9DUWmYknTTVk4TqygL9dqCrZgm1HMea/Q==
@@ -1669,7 +1669,7 @@ author-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
 
-auto@^7.6.0:
+auto@^7.6.2:
   version "7.6.2"
   resolved "https://registry.yarnpkg.com/auto/-/auto-7.6.2.tgz#61348a28810ff60642a6c5585e2f5e2aba4e2c07"
   integrity sha512-xh/5FKqT5P0gLqJpEH5Gnr/yyD163r0FUFs/CBtugdm/NA0Kn9rlrK7tphZ1veY9CSz7G19NaE1BY1SQCRV7Tw==
@@ -3284,20 +3284,20 @@ eslint-plugin-promise@~4.2.1:
   resolved "https://registry.yarnpkg.com/eslint-plugin-promise/-/eslint-plugin-promise-4.2.1.tgz#845fd8b2260ad8f82564c1222fce44ad71d9418a"
   integrity sha512-VoM09vT7bfA7D+upt+FjeBO5eHIJQBUWki1aPvB+vbNiHS3+oGIJGIeyBtKQTME6UPXXy3vV07OL1tHd3ANuDw==
 
-eslint-plugin-react@~7.14.3:
-  version "7.14.3"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.14.3.tgz#911030dd7e98ba49e1b2208599571846a66bdf13"
-  integrity sha512-EzdyyBWC4Uz2hPYBiEJrKCUi2Fn+BJ9B/pJQcjw5X+x/H2Nm59S4MJIvL4O5NEE0+WbnQwEBxWY03oUk+Bc3FA==
+eslint-plugin-react@~7.15.0:
+  version "7.15.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.15.0.tgz#4808b19cf7b4c439454099d4eb8f0cf0e9fe31dd"
+  integrity sha512-NbIh/yVXoltm8Df28PiPRanfCZAYubGqXU391MTCpW955Vum7S0nZdQYXGAvDh9ye4aNCmOR6YcYZsfMbEQZQA==
   dependencies:
     array-includes "^3.0.3"
     doctrine "^2.1.0"
     has "^1.0.3"
-    jsx-ast-utils "^2.1.0"
+    jsx-ast-utils "^2.2.1"
     object.entries "^1.1.0"
     object.fromentries "^2.0.0"
     object.values "^1.1.0"
     prop-types "^15.7.2"
-    resolve "^1.10.1"
+    resolve "^1.12.0"
 
 eslint-plugin-standard@~4.0.1:
   version "4.0.1"
@@ -3332,10 +3332,10 @@ eslint-visitor-keys@^1.0.0, eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@~6.4.0:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.4.0.tgz#5aa9227c3fbe921982b2eda94ba0d7fae858611a"
-  integrity sha512-WTVEzK3lSFoXUovDHEbkJqCVPEPwbhCq4trDktNI6ygs7aO41d4cDT0JFAT5MivzZeVLWlg7vHL+bgrQv/t3vA==
+eslint@~6.5.1:
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.5.1.tgz#828e4c469697d43bb586144be152198b91e96ed6"
+  integrity sha512-32h99BoLYStT1iq1v2P9uwpyznQ4M2jRiFB6acitKz52Gqn+vPaMDUTB1bYi1WN4Nquj2w+t+bimYUG83DC55A==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
@@ -5454,7 +5454,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.10.0"
 
-jsx-ast-utils@^2.1.0:
+jsx-ast-utils@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/jsx-ast-utils/-/jsx-ast-utils-2.2.1.tgz#4d4973ebf8b9d2837ee91a8208cc66f3a2776cfb"
   integrity sha512-v3FxCcAf20DayI+uxnCuw795+oOIkVu6EnJ1+kSzhqqTZHNkTZ7B66ZgLp4oLJ/gbA64cI0B7WRoHZMSRdyVRQ==
@@ -5948,7 +5948,7 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-mocha@^6.2.0:
+mocha@^6.2.1:
   version "6.2.1"
   resolved "https://registry.yarnpkg.com/mocha/-/mocha-6.2.1.tgz#da941c99437da9bac412097859ff99543969f94c"
   integrity sha512-VCcWkLHwk79NYQc8cxhkmI8IigTIhsCwZ6RTxQsqK6go4UvEhzJkYuHm8B2YtlSxcYq2fY+ucr4JBwoD6ci80A==
@@ -7228,7 +7228,7 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
-react-test-renderer@^16.0.0-0, react-test-renderer@^16.9.0:
+react-test-renderer@^16.0.0-0, react-test-renderer@^16.10.1:
   version "16.10.1"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.10.1.tgz#75b8e8ce152e00eadd303e9fa514a2ca917ee049"
   integrity sha512-VT8nd7XrrUV7MQPxeIuH7WstfrK2A8kgcMwGUtVXa0ja+CiYkxdmLYNjwX1L7irRF7ydzJJWiSLsQf2xBj4Xaw==
@@ -8962,7 +8962,7 @@ webpack-sources@^1.4.0, webpack-sources@^1.4.1:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack@^4.40.2:
+webpack@^4.41.0:
   version "4.41.0"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.41.0.tgz#db6a254bde671769f7c14e90a1a55e73602fc70b"
   integrity sha512-yNV98U4r7wX1VJAj5kyMsu36T8RPPQntcb5fJLOsMz/pt/WrKC0Vp1bAlqPLkA1LegSwQwf6P+kAbyhRKVQ72g==
