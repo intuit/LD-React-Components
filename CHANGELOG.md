@@ -1,3 +1,15 @@
+# v1.0.16 (Tue Oct 01 2019)
+
+#### ⚠️  Pushed to master
+
+- updated package.json and readme to reflect correct contributor commands.  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.15 (Tue Oct 01 2019)
 
 #### 🐛  Bug Fix
