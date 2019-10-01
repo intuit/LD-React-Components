@@ -1,3 +1,15 @@
+# v1.0.17 (Tue Oct 01 2019)
+
+#### ⚠️  Pushed to master
+
+- readme formatting changes  (dave_bergschneider@intuit.com)
+
+#### Authors: 1
+
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+
+---
+
 # v1.0.16 (Tue Oct 01 2019)
 
 #### ⚠️  Pushed to master
