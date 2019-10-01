@@ -1,3 +1,16 @@
+# v1.0.18 (Tue Oct 01 2019)
+
+#### ⚠️  Pushed to master
+
+- Add @Buranch as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+- Add @vvscode as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.17 (Tue Oct 01 2019)
 
 #### ⚠️  Pushed to master
