@@ -21,8 +21,6 @@
     "lint": "eslint --ext .js src/",
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
-    "contributors:add": "all-contributors",
-    "contributors:generate": "all-contributors generate",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
     "docs:publish": "push-dir --cleanup --dir=src/docs/dist --branch=gh-pages --message='Update Docs [skip ci]'",

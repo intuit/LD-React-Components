@@ -285,6 +285,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+`yarn all-contributors add <username> <contribution>`
+Example: `yarn all-contributors add poorpaddy code,doc`
+
 ### Adding a Contributor
 
 To add a contributor run `yarn contributors:add`, choose "Add new contributor or edit contribution type" and follow the prompts.
