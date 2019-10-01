@@ -49,6 +49,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "vvscode",
+      "name": "Vasiliy Vanchuk",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6904368?v=4",
+      "profile": "http://bit.ly/vvscodeli",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7
