@@ -13,5 +13,5 @@ module.exports = {
   FeatureFalse,
   FeatureFlag,
   FeatureCase,
-  launchDarklyClient
+  launchDarklyClient,
 };

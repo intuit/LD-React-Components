@@ -19,14 +19,14 @@ module.exports = () => {
       // bundle the client for hot reloading
       // only- means to only hot reload for successful updates
 
-      './src/docs/index.js'
+      './src/docs/index.js',
       // the entry point of our app
     ].filter(Boolean),
 
     output: {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
-      publicPath: isProd ? '/LD-React-Components' : '/'
+      publicPath: isProd ? '/LD-React-Components' : '/',
       // necessary for HMR to know where to load the hot update chunks
     },
 
@@ -42,7 +42,7 @@ module.exports = () => {
       publicPath: '/',
       // match the output `publicPath`
 
-      stats: 'minimal'
+      stats: 'minimal',
     },
 
     module: {
@@ -54,28 +54,28 @@ module.exports = () => {
             {
               loader: 'babel-loader',
               options: {
-                presets: ['@babel/preset-env', '@babel/preset-react']
-              }
-            }
-          ]
+                presets: ['@babel/preset-env', '@babel/preset-react'],
+              },
+            },
+          ],
         },
         {
           test: /\.(scss)$/,
-          loader: 'style-loader!css-loader!sass-loader'
-        }
-      ]
+          loader: 'style-loader!css-loader!sass-loader',
+        },
+      ],
     },
 
     resolve: {
-      extensions: ['.js', '.jsx', '.scss']
+      extensions: ['.js', '.jsx', '.scss'],
     },
 
     plugins: [
       !isProd && new webpack.HotModuleReplacementPlugin(),
-      new HtmlWebpackPlugin({ template: path.join(__dirname, './index.html') })
+      new HtmlWebpackPlugin({ template: path.join(__dirname, './index.html') }),
     ].filter(Boolean),
     optimization: {
-      namedModules: true
-    }
+      namedModules: true,
+    },
   };
 };

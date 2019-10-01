@@ -37,5 +37,4 @@ function FeatureSwitch(props) {
   return React.Children.map(childArray, (child, i) => child);
 }
 
-
 export default FeatureSwitch;
