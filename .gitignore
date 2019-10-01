@@ -7,7 +7,6 @@
 !.npmrc
 !.npmignore
 !.circleci
-!.all-contributorsrc
 
 # LOG Files #
 *.log
