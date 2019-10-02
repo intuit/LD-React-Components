@@ -81,7 +81,7 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run: git config user.email dave@cmscode.com
-      - run: git config user.name "poorpaddy"  
+      - run: git config user.name "poorpaddy"
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
@@ -93,11 +93,11 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run: git config user.email dave@cmscode.com
-      - run: git config user.name "poorpaddy"  
+      - run: git config user.name "poorpaddy"
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Build Docs
-          command: yarn docs:build
+          command: yarn build:storybook
       - run:
           name: Publish Docs
           command: yarn docs:publish
