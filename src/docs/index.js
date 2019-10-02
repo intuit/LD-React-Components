@@ -20,9 +20,12 @@ function Demo() {
   return (
     <div>
       <h1>Live Demo with examples</h1>
-      <h3>Testing <code>FeatureFlag</code> with <code>FeatureSwitch</code> and <code>FeatureCase</code></h3>
+      <h3>
+        Testing <code>FeatureFlag</code> with <code>FeatureSwitch</code> and
+        <code>FeatureCase</code>
+      </h3>
       <pre>
-        { `
+        {`
   const flags = {
     'multivariate-test': 'multivariate-test-2',
     'integration-test': true
@@ -43,8 +46,7 @@ function Demo() {
       </FeatureDefault>
     </FeatureSwitch>
   </FeatureFlag>
-        `
-        }
+        `}
       </pre>
       <FeatureFlag flagKey="multivariate-test" appFlags={flags}>
         <FeatureSwitch>
@@ -63,8 +65,10 @@ function Demo() {
         </FeatureSwitch>
       </FeatureFlag>
 
-
-      <h3>Testing <code>FeatureFlag</code> with <code>FeatureTrue</code> and <code>FeatureFalse</code></h3>
+      <h3>
+        Testing <code>FeatureFlag</code> with <code>FeatureTrue</code> and
+        <code>FeatureFalse</code>
+      </h3>
       <pre>
         {`
   <FeatureFlag flagKey="integration-test" appFlags={flags}>
@@ -79,7 +83,11 @@ function Demo() {
         <FeatureFalse>Output: FeatureFalse being rendered</FeatureFalse>
       </FeatureFlag>
 
-      <h3>Testing <code>FeatureFlag</code> with mixed components including Non Plugin Components, <code>FeatureTrue</code>, <code>FeatureFalse</code> and <code>FeatureSwtich</code></h3>
+      <h3>
+        Testing <code>FeatureFlag</code> with mixed components including Non Plugin Components,
+        <code>FeatureTrue</code>, <code>FeatureFalse</code>
+        and <code>FeatureSwtich</code>
+      </h3>
       <pre>
         {`
 <FeatureFlag flagKey="integration-test" appFlags={flags}>
@@ -123,7 +131,6 @@ function Demo() {
             <p>This one should throw an error</p>
           </FeatureCase>
         </FeatureSwitch>
-
         <FeatureFlag flagKey="multivariate-test" appFlags={flags}>
           <FeatureSwitch>
             <FeatureCase condition="multivariate-test-1" allowBreak>
@@ -169,19 +176,16 @@ const UsingHooks = () => {
       </FeatureFlag>
     </div>
   );
-};`
-      }</pre>
+};`}</pre>
       <UsingHooks />
-
     </div>
   );
-};
+}
 
-
-const render = (Component) => {
+const render = Component => {
   ReactDOM.render(
     <AppContainer>
-      <Component/>
+      <Component />
     </AppContainer>,
     document.getElementById('root')
   );

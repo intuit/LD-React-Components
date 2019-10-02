@@ -16,14 +16,26 @@ const UsingHooks = () => {
   const [count, setCount] = useState(65);
   return (
     <div>
-      <button onClick={() => setCount(count + 1)}>Add count</button>
-      <FeatureFlag flagKey={String.fromCharCode(count).toLowerCase()} appFlags={appFlags} >
+      <button onClick={() => setCount(count + 1)} type="button">
+        Add count
+      </button>
+      <FeatureFlag flagKey={String.fromCharCode(count).toLowerCase()} appFlags={appFlags}>
         <FeatureSwitch>
-          <FeatureCase condition="a" allowBreak>A is being rendered</FeatureCase>
-          <FeatureCase condition="b" allowBreak>B is being rendered</FeatureCase>
-          <FeatureCase condition="c" allowBreak>C is being rendered</FeatureCase>
-          <FeatureCase condition="d" allowBreak>D is being rendered</FeatureCase>
-          <FeatureCase condition="e" allowBreak>E is being rendered</FeatureCase>
+          <FeatureCase condition="a" allowBreak>
+            A is being rendered
+          </FeatureCase>
+          <FeatureCase condition="b" allowBreak>
+            B is being rendered
+          </FeatureCase>
+          <FeatureCase condition="c" allowBreak>
+            C is being rendered
+          </FeatureCase>
+          <FeatureCase condition="d" allowBreak>
+            D is being rendered
+          </FeatureCase>
+          <FeatureCase condition="e" allowBreak>
+            E is being rendered
+          </FeatureCase>
           <FeatureDefault>No value matches, this is default</FeatureDefault>
         </FeatureSwitch>
       </FeatureFlag>
@@ -32,4 +44,3 @@ const UsingHooks = () => {
 };
 
 export default UsingHooks;
-
