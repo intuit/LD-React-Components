@@ -96,15 +96,11 @@ jobs:
       - run: git config user.name "poorpaddy"
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
-          name: Build Docs
-<<<<<<< HEAD
+          name: Build Doc
           command: yarn build:storybook
       - run:
           name: Publish Docs
           command: yarn docs:publish
-=======
-          command: yarn deploy:storybook
->>>>>>> 50ee2cdb342bd923cdf98fdfc5aa1431006990b0
 
 workflows:
   version: 2
