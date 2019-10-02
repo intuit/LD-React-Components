@@ -4,7 +4,7 @@ import React from 'react';
  */
 function FeatureCase(props) {
   const { children } = props;
-  return React.Children.map(children, (child, i) => child);
+  return React.Children.map(children, child => child);
 }
 
 export default FeatureCase;

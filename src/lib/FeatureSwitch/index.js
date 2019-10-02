@@ -11,7 +11,8 @@ function FeatureSwitch(props) {
   let breakIt = false;
 
   React.Children.forEach(children, element => {
-    // if the Component is FeatureCase and break is false, compare the feature flag and render the element if its true
+    // if the Component is FeatureCase and break is false,
+    // compare the feature flag and render the element if its true
     if (
       React.isValidElement(element) &&
       (element.type.displayName === 'FeatureCase' ||
@@ -34,7 +35,7 @@ function FeatureSwitch(props) {
       childArray.push(element);
     }
   });
-  return React.Children.map(childArray, (child, i) => child);
+  return React.Children.map(childArray, child => child);
 }
 
 export default FeatureSwitch;

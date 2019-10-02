@@ -14,6 +14,7 @@ const appFlags = {
 
 const UsingHooks = () => {
   const [count, setCount] = useState(65);
+  /* eslint-disable react/button-has-type */
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>Add count</button>

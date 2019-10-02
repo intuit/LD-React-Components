@@ -8,18 +8,15 @@ class LDApi {
     this.env = env;
   }
 
-  init(user, envClientKey, options, timeout, logUpdates = false) {
+  init(user, envClientKey, options, _timeout, logUpdates = false) {
     // makes the flags available to the client
     this.ldClient = this.createClient(user, envClientKey, options);
     if (!options) {
+      /* eslint-disable-next-line */
       return console.log('Endpoint Options is not provided');
     }
     // returns the library and it's methods to use outside of the module
-    this.handleEvents(
-      (timeout = options.baseTimeout),
-      this.ldClient,
-      logUpdates,
-    );
+    this.handleEvents(options.baseTimeout, this.ldClient, logUpdates);
     return this;
   }
 
@@ -67,20 +64,22 @@ class LDApi {
 
     // take whatever is in the tags object and put it into the user object
     if (user !== undefined) {
+      /* eslint-disable-next-line */
       for (const key in user) {
         let userKey = key;
         if (key.indexOf('_') > -1) {
           userKey = key.replace('_', '');
         }
 
+        let userHash = user[key];
         if (key === 'authId') {
-          user[key] = hash
+          userHash = hash
             .sha256()
-            .update(user[key])
+            .update(userHash)
             .digest('hex');
         }
 
-        ldUser.custom[userKey] = user[key];
+        ldUser.custom[userKey] = userHash;
       }
     }
     return this.env === 'test'
@@ -89,13 +88,15 @@ class LDApi {
   }
 
   /**
-   * LD client posts events.  This function handles them.  First set a timeout for the ready event.  If it takes too long time out.
+   * LD client posts events.  This function handles them.
+   * First set a timeout for the ready event.  If it takes too long time out.
    * Log updates when they happen
    *
    * @param timeout LD client timeout
    * @param ldClient initialized client
    * @param logUpdates Set to true if you want to see the update events
    */
+  /* eslint-disable-next-line */
   handleEvents(timeout, ldClient, logUpdates = false, resolve, reject) {
     if (ldClient === undefined) {
       const error = new Error('ERROR: ldClient is undefined');
@@ -123,6 +124,7 @@ class LDApi {
       throw error;
     });
 
+    /* eslint-disable consistent-return */
     ldClient.on('ready', () => {
       clearTimeout(initTimeout);
 
@@ -130,15 +132,18 @@ class LDApi {
         return resolve(this);
       }
     });
+    /* eslint-enable consistent-return */
   }
 
   /**
-   * Grab the feature flag value.  If the LD client does not exist return the default
-   * value.
+   * Grab the feature flag value.
+   * If the LD client does not exist return the default value.
    *
    * @param featureId LD feature flag id
-   * @param defaultValue boolean value that is the default (this is used we can get the feature flag from LD)
-   * @returns {object} Value of feature flag. Flags can be boolean or enums, depending on their configuration
+   * @param defaultValue boolean value that is the default
+   * (this is used we can get the feature flag from LD)
+   * @returns {object} Value of feature flag. Flags can be boolean or enums,
+   * depending on their configuration
    */
   getFeatureFlag(featureId, defaultValue) {
     if (defaultValue === undefined) {
@@ -147,7 +152,7 @@ class LDApi {
     if (!this.ldClient) {
       return defaultValue;
     }
-    console.log('featureId ', featureId);
+    // console.log('featureId ', featureId);
     if (!featureId) {
       throw new Error('ERROR: featureId is undefined');
     }
@@ -155,24 +160,28 @@ class LDApi {
   }
 
   /**
-   * Grab the feature flag value resolved as a Promise  If the LD client does not exist return the default
-   * value.
+   * Grab the feature flag value resolved as a Promise
+   * If the LD client does not exist return the default value.
    *
    * @param featureFlag LD feature flag id
-   * @param defaultValue boolean value (this is used we can get the feature flag from LD)
-   * @returns {object} Value of feature flag as a promise. Flags can be boolean or enums, depending on their configuration
+   * @param defaultValue boolean value
+   * (this is used we can get the feature flag from LD)
+   * @returns {object} Value of feature flag as a promise. Flags can be
+   * boolean or enums, depending on their configuration
    */
   getPromiseFeatureFlag(featureFlag, defaultValue) {
+    /* eslint-disable-next-line no-unused-vars */
     return new Promise((resolve, reject) => {
       resolve(this.getFeatureFlag(featureFlag, defaultValue));
     });
   }
 
   /**
-   * Grab All feature flags for the user.  If the LD client does not exist, return the default
-   * value.
+   * Grab All feature flags for the user
+   * If the LD client does not exist, return the default value.
    *
-   * @returns {object} Value of feature flags. Flags can be boolean or enums, depending on their configuration
+   * @returns {object} Value of feature flags
+   * Flags can be boolean or enums, depending on their configuration
    */
 
   getAllFlags() {

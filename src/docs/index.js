@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+/* eslint-disable-next-line */
 import { AppContainer } from 'react-hot-loader';
 import FeatureFlag from '../lib/FeatureFlag/index';
 import FeatureTrue from '../lib/FeatureTrue/index';
