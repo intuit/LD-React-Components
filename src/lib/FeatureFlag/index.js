@@ -84,6 +84,7 @@ function FeatureFlag(props) {
 
 FeatureFlag.propTypes = {
   flagKey: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
   appFlags: PropTypes.object.isRequired
 };
 

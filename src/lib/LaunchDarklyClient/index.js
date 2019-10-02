@@ -12,9 +12,11 @@ class LDApi {
     // makes the flags available to the client
     this.ldClient = this.createClient(user, envClientKey, options);
     if (!options) {
+      // eslint-disable-next-line no-console
       return console.log('Endpoint Options is not provided');
     }
     // returns the library and it's methods to use outside of the module
+    // eslint-disable-next-line no-param-reassign
     this.handleEvents((timeout = options.baseTimeout), this.ldClient, logUpdates);
     return this;
   }
@@ -57,6 +59,9 @@ class LDApi {
 
     // take whatever is in the tags object and put it into the user object
     if (user !== undefined) {
+      /* eslint-disable no-restricted-syntax, guard-for-in */
+      // TO-DO: check if inherited properties of obj 'user' has to iterated or not
+      // and remove these eslint-disable as per that.
       for (const key in user) {
         let userKey = key;
         if (key.indexOf('_') > -1) {
@@ -64,6 +69,7 @@ class LDApi {
         }
 
         if (key === 'authId') {
+          // eslint-disable-next-line no-param-reassign
           user[key] = hash
             .sha256()
             .update(user[key])
@@ -72,6 +78,7 @@ class LDApi {
 
         ldUser.custom[userKey] = user[key];
       }
+      /* eslint-enable */
     }
     return this.env === 'test'
       ? LDClient.default.initialize(envClientKey, ldUser, options)
@@ -79,13 +86,16 @@ class LDApi {
   }
 
   /**
-   * LD client posts events.  This function handles them.  First set a timeout for the ready event.  If it takes too long time out.
+   * LD client posts events.  This function handles them.
+   * First set a timeout for the ready event.
+   * If it takes too long time out.
    * Log updates when they happen
    *
    * @param timeout LD client timeout
    * @param ldClient initialized client
    * @param logUpdates Set to true if you want to see the update events
    */
+  // eslint-disable-next-line no-unused-vars
   handleEvents(timeout, ldClient, logUpdates = false, resolve, reject) {
     if (ldClient === undefined) {
       const error = new Error('ERROR: ldClient is undefined');
@@ -117,7 +127,9 @@ class LDApi {
       if (resolve !== undefined) {
         return resolve(this);
       }
+      return undefined;
     });
+    return undefined;
   }
 
   /**
@@ -135,6 +147,7 @@ class LDApi {
     if (!this.ldClient) {
       return defaultValue;
     }
+    // eslint-disable-next-line no-console
     console.log('featureId ', featureId);
     if (!featureId) {
       throw new Error('ERROR: featureId is undefined');
@@ -148,10 +161,11 @@ class LDApi {
    *
    * @param featureFlag LD feature flag id
    * @param defaultValue boolean value (this is used we can get the feature flag from LD)
-   * @returns {object} Value of feature flag as a promise. Flags can be boolean or enums, depending on their configuration
+   * @returns {object} Value of feature flag as a promise.
+   * Flags can be boolean or enums, depending on their configuration
    */
   getPromiseFeatureFlag(featureFlag, defaultValue) {
-    return new Promise((resolve, reject) => {
+    return new Promise(resolve => {
       resolve(this.getFeatureFlag(featureFlag, defaultValue));
     });
   }
