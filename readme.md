@@ -263,14 +263,21 @@ To see the demo go to http://localhost:8080
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <table>
   <tr>
     <td align="center"><a href="http://www.cmscode.com"><img src="https://avatars3.githubusercontent.com/u/2213076?v=4" width="100px;" alt="Dave Bergschneider"/><br /><sub><b>Dave Bergschneider</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=poorpaddy" title="Code">💻</a> <a href="#design-poorpaddy" title="Design">🎨</a> <a href="https://github.com/intuit/LD-React-Components/commits?author=poorpaddy" title="Documentation">📖</a> <a href="#example-poorpaddy" title="Examples">💡</a> <a href="#maintenance-poorpaddy" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://hipstersmoothie.com"><img src="https://avatars3.githubusercontent.com/u/1192452?v=4" width="100px;" alt="Andrew Lisowski"/><br /><sub><b>Andrew Lisowski</b></sub></a><br /><a href="#infra-hipstersmoothie" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://www.harshitjain.in"><img src="https://avatars2.githubusercontent.com/u/1290501?v=4" width="100px;" alt="Harshit Jain"/><br /><sub><b>Harshit Jain</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=hjaintech" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/zjael"><img src="https://avatars3.githubusercontent.com/u/13909277?s=460&v=4" width="100px;" alt="Jakob S"/><br /><sub><b>Jakob S</b></sub></a><br /><a href="#maintenance-zjael" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="http://bit.ly/vvscodeli"><img src="https://avatars1.githubusercontent.com/u/6904368?v=4" width="100px;" alt="Vasiliy Vanchuk"/><br /><sub><b>Vasiliy Vanchuk</b></sub></a><br /><a href="#infra-vvscode" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/Buranch"><img src="https://avatars2.githubusercontent.com/u/17932362?v=4" width="100px;" alt="Buranch"/><br /><sub><b>Buranch</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Buranch" title="Code">💻</a></td>
   </tr>
 </table>
 
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
@@ -280,9 +287,13 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
+
+
+
 ### Adding a Contributor
 
-To add a contributor run `yarn contributors:add`, choose "Add new contributor or edit contribution type" and follow the prompts.
+To add a contributor run `yarn all-contributors add <username> <contribution>`.<br><br>
+Example: `yarn all-contributors add poorpaddy code,doc`
 
 ## License
 

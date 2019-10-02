@@ -1,3 +1,70 @@
+# v1.0.18 (Tue Oct 01 2019)
+
+#### ⚠️  Pushed to master
+
+- Add @Buranch as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+- Add @vvscode as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
+# v1.0.17 (Tue Oct 01 2019)
+
+#### ⚠️  Pushed to master
+
+- readme formatting changes  (dave_bergschneider@intuit.com)
+
+#### Authors: 1
+
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+
+---
+
+# v1.0.16 (Tue Oct 01 2019)
+
+#### ⚠️  Pushed to master
+
+- updated package.json and readme to reflect correct contributor commands.  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
+# v1.0.15 (Tue Oct 01 2019)
+
+#### 🐛  Bug Fix
+
+- Fixing Contribution Generation issue [#24](https://github.com/intuit/LD-React-Components/pull/24) ([@hjaintech](https://github.com/hjaintech))
+
+#### Authors: 1
+
+- Harshit Jain ([@hjaintech](https://github.com/hjaintech))
+
+---
+
+# v1.0.13 (Tue Oct 01 2019)
+
+#### 🐛  Bug Fix
+
+- updated all dependencies [#21](https://github.com/intuit/LD-React-Components/pull/21) ([@zjael](https://github.com/zjael) dave_bergschneider@intuit.com)
+
+#### ⚠️  Pushed to master
+
+- fixes lock file  (dave_bergschneider@intuit.com)
+- Merge branch 'master' of https://github.com/intuit/LD-React-Components  (dave_bergschneider@intuit.com)
+
+#### Authors: 2
+
+- Jakob S ([@zjael](https://github.com/zjael))
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+
+---
+
 # v1.0.12 (Fri Sep 27 2019)
 
 #### 🐛  Bug Fix

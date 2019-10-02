@@ -1,6 +1,6 @@
 {
   "name": "ld-react-components",
-  "version": "1.0.12",
+  "version": "1.0.18",
   "description": "Semantic component helpers to support LaunchDarkly in your react app.",
   "main": "dist/index.js",
   "author": {
@@ -38,11 +38,11 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^5.2.1",
     "@storybook/addon-links": "^5.2.1",
@@ -50,7 +50,7 @@
     "@storybook/react": "^5.2.1",
     "@storybook/storybook-deployer": "^2.8.1",
     "all-contributors-cli": "^6.9.1",
-    "auto": "^7.6.0",
+    "auto": "^7.6.2",
     "babel-eslint": "^10.0.3",
     "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
@@ -59,12 +59,12 @@
     "css-loader": "^3.2.0",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
-    "eslint": "~6.4.0",
+    "eslint": "~6.5.1",
     "eslint-config-standard": "~14.1.0",
     "eslint-plugin-import": "~2.18.2",
     "eslint-plugin-node": "~10.0.0",
     "eslint-plugin-promise": "~4.2.1",
-    "eslint-plugin-react": "~7.14.3",
+    "eslint-plugin-react": "~7.15.0",
     "eslint-plugin-standard": "~4.0.1",
     "expect": "^24.9.0",
     "gh-pages": "^2.1.1",
@@ -72,16 +72,16 @@
     "jest": "^24.9.0",
     "jsdom": "15.1.1",
     "jsdom-global": "3.0.2",
-    "mocha": "^6.2.0",
+    "mocha": "^6.2.1",
     "nyc": "^14.1.1",
     "push-dir": "^0.4.1",
     "react": "^16.0.0",
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.12.14",
-    "react-test-renderer": "^16.9.0",
+    "react-test-renderer": "^16.10.1",
     "sinon": "^7.5.0",
     "style-loader": "^1.0.0",
-    "webpack": "^4.40.2",
+    "webpack": "^4.41.0",
     "webpack-cli": "^3.3.9",
     "webpack-dev-server": "^3.8.1"
   },
@@ -91,7 +91,7 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
   }
 }

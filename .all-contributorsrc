@@ -31,6 +31,42 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "hjaintech",
+      "name": "Harshit Jain",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1290501?v=4",
+      "profile": "http://www.harshitjain.in",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "zjael",
+      "name": "Jakob S",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/13909277?s=460&v=4",
+      "profile": "https://github.com/zjael",
+      "contributions": [
+        "maintenance"
+      ]
+    },
+    {
+      "login": "vvscode",
+      "name": "Vasiliy Vanchuk",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/6904368?v=4",
+      "profile": "http://bit.ly/vvscodeli",
+      "contributions": [
+        "infra"
+      ]
+    },
+    {
+      "login": "Buranch",
+      "name": "Buranch",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/17932362?v=4",
+      "profile": "https://github.com/Buranch",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
