@@ -1,3 +1,25 @@
+# v1.0.19 (Wed Oct 02 2019)
+
+#### 🐛  Bug Fix
+
+- 18 Update CircleCI yaml to build storybook docs [#28](https://github.com/intuit/LD-React-Components/pull/28) (gary_grumbley@intuit.com [@ggrumbley](https://github.com/ggrumbley))
+- Adding @ishubhamarora to contributor list [#29](https://github.com/intuit/LD-React-Components/pull/29) (shubham_arora@intuit.com)
+- updating ESLinting rules and fixing the linting issues [#27](https://github.com/intuit/LD-React-Components/pull/27) (shubham_arora@intuit.com)
+- 18 Add Storybook dependencies [#26](https://github.com/intuit/LD-React-Components/pull/26) (gary_grumbley@intuit.com [@ggrumbley](https://github.com/ggrumbley))
+
+#### ⚠️  Pushed to master
+
+- corrected lockfile  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 4
+
+- Shubham Arora ([@ishubhamarora](https://github.com/ishubhamarora))
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+- Gary Grumbley ([@ggrumbley](https://github.com/ggrumbley))
+- gary (gary_grumbley@intuit.com)
+
+---
+
 # v1.0.18 (Tue Oct 01 2019)
 
 #### ⚠️  Pushed to master
