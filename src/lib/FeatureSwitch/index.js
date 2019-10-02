@@ -14,8 +14,7 @@ function FeatureSwitch(props) {
     // if the Component is FeatureCase and break is false, compare the feature flag and render the element if its true
     if (
       React.isValidElement(element) &&
-      (element.type.displayName === 'FeatureCase' ||
-        element.type.name === 'FeatureCase') &&
+      (element.type.displayName === 'FeatureCase' || element.type.name === 'FeatureCase') &&
       !breakIt
     ) {
       const { condition, allowBreak } = element.props;
@@ -27,15 +26,13 @@ function FeatureSwitch(props) {
     // if its Default and it is not breaked yet, render the element.
     if (
       React.isValidElement(element) &&
-      (element.type.displayName === 'FeatureDefault' ||
-        element.type.name === 'FeatureDefault') &&
+      (element.type.displayName === 'FeatureDefault' || element.type.name === 'FeatureDefault') &&
       !breakIt
     ) {
       childArray.push(element);
     }
   });
-  return React.Children.map(childArray, (child, i) => child);
+  return React.Children.map(childArray, child => child);
 }
-
 
 export default FeatureSwitch;
