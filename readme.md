@@ -273,6 +273,7 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://github.com/zjael"><img src="https://avatars3.githubusercontent.com/u/13909277?s=460&v=4" width="100px;" alt="Jakob S"/><br /><sub><b>Jakob S</b></sub></a><br /><a href="#maintenance-zjael" title="Maintenance">🚧</a></td>
     <td align="center"><a href="http://bit.ly/vvscodeli"><img src="https://avatars1.githubusercontent.com/u/6904368?v=4" width="100px;" alt="Vasiliy Vanchuk"/><br /><sub><b>Vasiliy Vanchuk</b></sub></a><br /><a href="#infra-vvscode" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/Buranch"><img src="https://avatars2.githubusercontent.com/u/17932362?v=4" width="100px;" alt="Buranch"/><br /><sub><b>Buranch</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Buranch" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/ishubhamarora"><img src="https://avatars2.githubusercontent.com/u/55948973?v=4" width="100px;" alt="Shubham Arora"/><br /><sub><b>Shubham Arora</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=ishubhamarora" title="Code">💻</a></td>
   </tr>
 </table>
 
