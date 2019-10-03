@@ -22,9 +22,8 @@
     "lint": "eslint --ext .js src/",
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
-    "docs:build": "build-storybook -c .storybook -o storybook",
-    "docs:publish": "push-dir --cleanup --dir=storybook --branch=gh-pages --message='Update Docs [skip ci]'",
-    "dev": "yarn docs",
+    "docs:build": "build-storybook -o docs",
+    "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --message='Update Docs [skip ci]'",
     "release": "auto shipit"
   },
   "keywords": [
