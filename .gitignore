@@ -50,3 +50,6 @@ atlassian-ide-plugin.xml
 #OSX
 .DS_Store
 .vscode
+
+# Docs
+/docs
