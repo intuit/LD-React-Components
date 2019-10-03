@@ -4,9 +4,6 @@ defaults: &defaults
   working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
-  branches:
-      only: 
-        - master
 
 aliases:
   # Circle related commands
