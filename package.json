@@ -17,13 +17,13 @@
   "scripts": {
     "start": "start-storybook -p 6010",
     "prepare": "yarn build",
-    "clean": "rimraf ./dist ./coverage ./storybook-static",
+    "clean": "rimraf ./dist ./coverage ./docs",
     "test": "jest --coverage",
     "lint": "eslint --ext .js src/",
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs:build": "build-storybook -o docs",
-    "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --message='Update Docs [skip ci]'",
+    "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --message='Update Docs [skip ci]' --force",
     "release": "auto shipit"
   },
   "keywords": [
