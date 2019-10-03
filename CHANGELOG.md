@@ -1,3 +1,15 @@
+# v1.0.31 (Thu Oct 03 2019)
+
+#### ⚠️  Pushed to master
+
+- testing ignore of gh-pages  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.30 (Thu Oct 03 2019)
 
 #### ⚠️  Pushed to master
