@@ -1,3 +1,15 @@
+# v1.0.28 (Thu Oct 03 2019)
+
+#### 🐛  Bug Fix
+
+- Increased code coverage :) [#39](https://github.com/intuit/LD-React-Components/pull/39) ([@Hreherch](https://github.com/Hreherch))
+
+#### Authors: 1
+
+- Bennett Hreherchuk ([@Hreherch](https://github.com/Hreherch))
+
+---
+
 # v1.0.27 (Thu Oct 03 2019)
 
 #### ⚠️  Pushed to master
