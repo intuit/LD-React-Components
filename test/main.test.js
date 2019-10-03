@@ -100,7 +100,16 @@ describe('Launch Darkly:', () => {
   it('createClient', done => {
     const ldApi = new LDApi('test');
 
-    let client = ldApi.createClient(user, envClientKey, options);
+    const client = ldApi.createClient(user, envClientKey, options);
+    expect(client !== undefined).to.equal(true);
+    done();
+  });
+
+  it('createClient accepts underscored user keys', done => {
+    const ldApi = new LDApi('test');
+    const usser = { ...user, key_With_Underscore: 'test' };
+
+    const client = ldApi.createClient(usser, envClientKey, options);
     expect(client !== undefined).to.equal(true);
     done();
   });
@@ -178,7 +187,18 @@ describe('Launch Darkly:', () => {
     }
   });
 
-  it('handleEvents timeout', done => {
+  it('handleEvents no client with reject callback', done => {
+    const ldApi = new LDApi('test');
+    const reject = error => {
+      expect(error !== null).to.equal(true);
+      expect(error.message === 'ERROR: ldClient is undefined').to.equal(true);
+      done();
+    };
+
+    ldApi.handleEvents(timeout, undefined, undefined, undefined, reject);
+  });
+
+  it('handleEvents timeout with reject callback', done => {
     const ldApi = new LDApi('test');
 
     new Promise((resolve, reject) => {
@@ -187,10 +207,7 @@ describe('Launch Darkly:', () => {
     }).then(
       resolve => {},
       reject => {
-        expect(
-          reject.message ===
-            'ERROR: Creation of Launch Darkly client has timed out'
-        ).to.equal(true);
+        expect(reject.message).to.equal('ERROR: Creation of Launch Darkly client has timed out');
         done();
       }
     );
@@ -200,16 +217,16 @@ describe('Launch Darkly:', () => {
     const events = {};
     const ldApi = new LDApi();
     const mockClient = {
-      emit: event => (events[event] ? events[event]() : null),
+      emit: (event, ...args) => (events[event] ? events[event](...args) : null),
       on: (event, cb) => {
         events[event] = cb;
       }
     };
-    ldApi.handleEvents(1, mockClient, false, null, error => {
-      return expect(error).to.throw;
+    ldApi.handleEvents(timeout, mockClient, false, null, error => {
+      expect(error.message).to.equal('Testing Error');
+      done();
     });
-    mockClient.emit('error');
-    done();
+    mockClient.emit('error', Error('Testing Error'));
   });
 
   it('getFeatureFlag throws and error when there is no default value provided', done => {
@@ -231,9 +248,7 @@ describe('Launch Darkly:', () => {
     } catch (ex) {
       expect(ex !== null).to.equal(true);
       // eslint-disable
-      expect(
-        ex.message === 'Default value must be passed to getPromiseFeatureFlag'
-      ).to.equal(true);
+      expect(ex.message).to.equal('Default value must be passed to getPromiseFeatureFlag');
     }
   });
 
@@ -302,9 +317,7 @@ describe('Launch Darkly:', () => {
     noClientLDAPI.getPromiseFeatureFlag(config.features).catch(err => {
       // t.deepEqual(err.message, 'Default value must be passed to getPromiseFeatureFlag');
       // eslint-disable
-      expect(
-        err.message === 'Default value must be passed to getPromiseFeatureFlag'
-      ).to.equal(true);
+      expect(err.message).to.equal('Default value must be passed to getPromiseFeatureFlag');
       done();
     });
   });

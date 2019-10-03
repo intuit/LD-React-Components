@@ -104,6 +104,9 @@ describe('Launch Darkly Plugin ', () => {
         <FeatureTrue>
           <div>Hello there</div>
         </FeatureTrue>
+        <FeatureFalse>
+          <div>Hello there</div>
+        </FeatureFalse>
       </FeatureFlag>
     );
     expect(component.exists()).toBe(true);
