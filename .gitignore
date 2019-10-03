@@ -7,6 +7,7 @@
 !.npmrc
 !.npmignore
 !.circleci
+!.storybook
 
 # LOG Files #
 *.log

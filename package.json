@@ -24,10 +24,10 @@
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs": "webpack-dev-server --config src/docs/webpack.config.live.babel.js",
     "docs:build": "NODE_ENV=production webpack --config src/docs/webpack.config.live.babel.js",
-    "docs:publish": "push-dir --cleanup --dir=storybook-static --branch=gh-pages --message='Update Docs [skip ci]'",
+    "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --message='Update Docs [skip ci]'",
     "dev": "yarn docs",
     "release": "auto shipit",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook -o docs"
   },
   "keywords": [
     "launch-darkly",
