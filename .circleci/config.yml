@@ -1,10 +1,6 @@
 version: 2.1
 
 defaults: &defaults
-  filters:
-    branches:
-      only: 
-        - master
   working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
@@ -136,3 +132,5 @@ workflows:
             branches:
               only:
                 - master
+              ignore:
+                - gh-pages
