@@ -99,6 +99,9 @@ jobs:
           name: Build Docs
           command: yarn docs:build
       - run:
+          name: Copy Docs Config
+          command: yarn docs:config
+      - run:
           name: Publish Docs
           command: yarn docs:publish
 
