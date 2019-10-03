@@ -76,6 +76,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ggrumbley",
+      "name": "Gary Grumbley",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/15022042?v=4",
+      "profile": "https://twitter.com/StumblinG",
+      "contributions": [
+        "infra",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7

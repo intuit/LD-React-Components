@@ -275,6 +275,9 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://github.com/Buranch"><img src="https://avatars2.githubusercontent.com/u/17932362?v=4" width="100px;" alt="Buranch"/><br /><sub><b>Buranch</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Buranch" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/ishubhamarora"><img src="https://avatars2.githubusercontent.com/u/55948973?v=4" width="100px;" alt="Shubham Arora"/><br /><sub><b>Shubham Arora</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=ishubhamarora" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://twitter.com/StumblinG"><img src="https://avatars0.githubusercontent.com/u/15022042?v=4" width="100px;" alt="Gary Grumbley"/><br /><sub><b>Gary Grumbley</b></sub></a><br /><a href="#infra-ggrumbley" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/intuit/LD-React-Components/commits?author=ggrumbley" title="Documentation">📖</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
