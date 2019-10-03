@@ -89,6 +89,9 @@ jobs:
 
   publishDocs:
     <<: *defaults
+    branches:
+      ignore:
+        - gh-pages
     steps:
       - attach_workspace:
           at: ~/ld-react-components
