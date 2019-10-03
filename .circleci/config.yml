@@ -96,8 +96,8 @@ jobs:
       - run: git config user.name "poorpaddy"
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
-          name: Build Doc
-          command: yarn build:storybook
+          name: Build Docs
+          command: yarn docs:build
       - run:
           name: Publish Docs
           command: yarn docs:publish
