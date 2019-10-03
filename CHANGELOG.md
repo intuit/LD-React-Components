@@ -1,3 +1,15 @@
+# v1.0.22 (Thu Oct 03 2019)
+
+#### ⚠️  Pushed to master
+
+- remove storybook directory  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.21 (Thu Oct 03 2019)
 
 #### ⚠️  Pushed to master
