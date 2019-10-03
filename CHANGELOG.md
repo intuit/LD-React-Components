@@ -1,3 +1,20 @@
+# v1.0.24 (Thu Oct 03 2019)
+
+#### 🐛  Bug Fix
+
+- 18 setup docs ci [#31](https://github.com/intuit/LD-React-Components/pull/31) (gary_grumbley@intuit.com [@poorpaddy](https://github.com/poorpaddy))
+
+#### ⚠️  Pushed to master
+
+- fixed frozen lock file  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+- gary (gary_grumbley@intuit.com)
+
+---
+
 # v1.0.23 (Thu Oct 03 2019)
 
 #### ⚠️  Pushed to master
