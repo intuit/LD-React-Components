@@ -2,8 +2,8 @@ version: 2.1
 
 defaults: &defaults
   branches:
-    ignore: 
-      - gh-pages
+      only: 
+        - master
   working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
