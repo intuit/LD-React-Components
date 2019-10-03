@@ -1,3 +1,15 @@
+# v1.0.25 (Thu Oct 03 2019)
+
+#### ⚠️  Pushed to master
+
+- forcing push  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.24 (Thu Oct 03 2019)
 
 #### 🐛  Bug Fix
