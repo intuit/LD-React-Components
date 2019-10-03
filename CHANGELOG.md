@@ -1,3 +1,15 @@
+# v1.0.20 (Thu Oct 03 2019)
+
+#### ⚠️  Pushed to master
+
+- troubleshooting docs  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.19 (Wed Oct 02 2019)
 
 #### 🐛  Bug Fix
