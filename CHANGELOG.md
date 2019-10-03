@@ -1,3 +1,15 @@
+# v1.0.26 (Thu Oct 03 2019)
+
+#### ⚠️  Pushed to master
+
+- Add @ggrumbley as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.25 (Thu Oct 03 2019)
 
 #### ⚠️  Pushed to master
