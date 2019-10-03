@@ -30,7 +30,8 @@
     "launch-darkly",
     "feature",
     "flags",
-    "react"
+    "react",
+    "open source"
   ],
   "license": "MIT",
   "devDependencies": {
