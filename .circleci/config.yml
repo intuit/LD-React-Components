@@ -111,6 +111,12 @@ workflows:
       - build:
           requires:
             - install
+          filters:
+            branches:
+              only:
+                - master
+              ignore:
+                - gh-pages
 
       - lint:
           requires:
