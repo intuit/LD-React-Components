@@ -1,6 +1,8 @@
 version: 2.1
 
 defaults: &defaults
+  branches:
+    ignore: - gh-pages
   working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
@@ -49,9 +51,6 @@ jobs:
 
   build:
     <<: *defaults
-    branches:
-      ignore:
-        - gh-pages
     steps:
       - attach_workspace:
           at: ~/ld-react-components
@@ -92,9 +91,6 @@ jobs:
 
   publishDocs:
     <<: *defaults
-    branches:
-      ignore:
-        - gh-pages
     steps:
       - attach_workspace:
           at: ~/ld-react-components
