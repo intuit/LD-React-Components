@@ -1,5 +1,5 @@
 import React from 'react';
-import FeatureFlag from '.';
+import FeatureFlag from './typescript.tsx';
 import FeatureSwitch from '../FeatureSwitch';
 import FeatureCase from '../FeatureCase';
 import FeatureDefault from '../FeatureDefault';
