@@ -95,6 +95,18 @@
       "contributions": [
         "test"
       ]
+    },
+    {
+      "login": "josediego",
+      "name": "Jose Diego",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5665920?v=4",
+      "profile": "https://github.com/josediego",
+      "contributions": [
+        "infra",
+        "code",
+        "doc",
+        "test"
+      ]
     }
   ],
   "contributorsPerLine": 7
