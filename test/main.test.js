@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import LDClient from 'ldclient-js';
 import LDApi from '../src/lib/LaunchDarklyClient';
 
-let config = {
+const config = {
   environment: 'development',
   features: {
     default: {
@@ -34,7 +34,7 @@ const flags = {
   'other-forms-mode': false
 };
 
-let user = { authId: 'ode_user', country: 'USA' };
+const user = { authId: 'ode_user', country: 'USA' };
 
 const envClientKey = '59x74xxxx9x1x30x6x0x3xxx';
 
@@ -77,13 +77,13 @@ describe('Launch Darkly:', () => {
 
   it('init', () => {
     const ldApi = new LDApi('test');
-    let client = ldApi.init(user, envClientKey, options, timeout);
+    const client = ldApi.init(user, envClientKey, options, timeout);
     expect(client !== undefined).to.equal(true);
   });
 
   it('init without option should throw warning', () => {
     const ldApi = new LDApi('test');
-    let client = ldApi.init(user, envClientKey, null, timeout);
+    const client = ldApi.init(user, envClientKey, null, timeout);
     console.log('client on without ', client);
     expect(client === undefined).to.equal(true);
   });
@@ -151,7 +151,7 @@ describe('Launch Darkly:', () => {
   it('handleEvents', done => {
     const ldApi = new LDApi('test');
 
-    let client = ldApi.createClient(user, envClientKey, options);
+    const client = ldApi.createClient(user, envClientKey, options);
     ldApi.handleEvents(timeout, client);
     expect(true).to.equal(true);
     done();
@@ -161,7 +161,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     new Promise((resolve, reject) => {
-      let client = ldApi.createClient(user, envClientKey, options);
+      const client = ldApi.createClient(user, envClientKey, options);
       ldApi.handleEvents(timeout, client, false, resolve, reject);
     }).then(
       resolve => {
@@ -202,7 +202,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     new Promise((resolve, reject) => {
-      let client = ldApi.createClient(user, envClientKey, options);
+      const client = ldApi.createClient(user, envClientKey, options);
       ldApi.handleEvents(1, client, false, resolve, reject);
     }).then(
       resolve => {},
