@@ -23,7 +23,7 @@
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs:build": "build-storybook -o docs",
-    "docs:config": "cp .storybook/config.yml docs/",
+    "docs:config": "cp .storybook/config.yml docs/.circleci/",
     "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --message='Update Docs [skip ci]' --force",
     "release": "auto shipit"
   },
