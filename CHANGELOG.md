@@ -1,3 +1,15 @@
+# v1.0.38 (Fri Oct 04 2019)
+
+#### 🐛  Bug Fix
+
+- Add configuration for Typescript support on Storybook, build and Jest [#40](https://github.com/intuit/LD-React-Components/pull/40) ([@josediego](https://github.com/josediego))
+
+#### Authors: 1
+
+- Jose Diego ([@josediego](https://github.com/josediego))
+
+---
+
 # v1.0.37 (Fri Oct 04 2019)
 
 #### ⚠️  Pushed to master
