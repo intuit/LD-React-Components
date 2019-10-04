@@ -1,3 +1,16 @@
+# v1.0.39 (Fri Oct 04 2019)
+
+#### ⚠️  Pushed to master
+
+- Merge branch 'master' of https://github.com/intuit/LD-React-Components  ([@poorpaddy](https://github.com/poorpaddy))
+- Add @Hreherch as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.38 (Fri Oct 04 2019)
 
 #### 🐛  Bug Fix
