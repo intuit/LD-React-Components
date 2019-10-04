@@ -19,7 +19,7 @@
     "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage ./docs",
     "test": "jest --coverage",
-    "lint": "eslint --ext .js src/",
+    "lint": "eslint src/",
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs:build": "build-storybook -o docs",

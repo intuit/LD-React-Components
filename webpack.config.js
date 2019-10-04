@@ -46,7 +46,7 @@ export default () => ({
   },
 
   resolve: {
-    extensions: ['.js', '.jsx', '.scss']
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.scss']
   },
 
   externals: {
