@@ -23,7 +23,7 @@
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs:build": "build-storybook -o docs",
-    "docs:config": "cp .storybook/config.yml docs/.circleci/",
+    "docs:config": "mkdirp ./docs/.circleci/ && cp .storybook/config.yml docs/.circleci/",
     "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --message='Update Docs [skip ci]' --force",
     "release": "auto shipit"
   },
@@ -76,6 +76,7 @@
     "jest": "^24.9.0",
     "jsdom": "15.1.1",
     "jsdom-global": "3.0.2",
+    "mkdirp": "^0.5.1",
     "mocha": "^6.2.1",
     "nyc": "^14.1.1",
     "prettier": "^1.18.2",
