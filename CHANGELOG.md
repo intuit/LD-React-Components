@@ -1,3 +1,15 @@
+# v1.0.40 (Fri Oct 04 2019)
+
+#### ⚠️  Pushed to master
+
+- Add @josediego as a contributor  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.39 (Fri Oct 04 2019)
 
 #### ⚠️  Pushed to master
