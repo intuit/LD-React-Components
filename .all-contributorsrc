@@ -107,6 +107,15 @@
         "doc",
         "test"
       ]
+    },
+    {
+      "login": "Swazimodo",
+      "name": "Sam Nesbitt",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/10536879?v=4",
+      "profile": "https://www.linkedin.com/in/sam-nesbitt-74ba6a34/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
