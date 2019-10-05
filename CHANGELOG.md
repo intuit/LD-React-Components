@@ -1,3 +1,15 @@
+# v1.0.41 (Sat Oct 05 2019)
+
+#### 🐛  Bug Fix
+
+- Feature/type switch [#41](https://github.com/intuit/LD-React-Components/pull/41) ([@Swazimodo](https://github.com/Swazimodo))
+
+#### Authors: 1
+
+- Sam Nesbitt ([@Swazimodo](https://github.com/Swazimodo))
+
+---
+
 # v1.0.40 (Fri Oct 04 2019)
 
 #### ⚠️  Pushed to master
