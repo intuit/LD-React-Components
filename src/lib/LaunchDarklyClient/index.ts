@@ -2,9 +2,11 @@ import hash from 'hash.js';
 import * as LDClient from 'ldclient-js';
 
 class LDApi {
+
+  private ldClient: LDClient.LDClient;
+  private readonly env: String;
+
   constructor(env) {
-    this.ldClient = null;
-    this.featureFlags = null;
     this.env = env;
   }
 
@@ -17,7 +19,7 @@ class LDApi {
     }
     // returns the library and it's methods to use outside of the module
     // eslint-disable-next-line no-param-reassign
-    this.handleEvents((timeout = options.baseTimeout), this.ldClient, logUpdates);
+    this.handleEvents((timeout = options.baseTimeout), this.ldClient, logUpdates, undefined, undefined);
     return this;
   }
 
