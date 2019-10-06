@@ -2,9 +2,11 @@ import hash from 'hash.js';
 import * as LDClient from 'ldclient-js';
 
 class LDApi {
+
+  private ldClient: LDClient.LDClient;
+  private readonly env: String;
+
   constructor(env) {
-    this.ldClient = null;
-    this.featureFlags = null;
     this.env = env;
   }
 
@@ -58,28 +60,27 @@ class LDApi {
     };
 
     // take whatever is in the tags object and put it into the user object
-    if (user !== undefined) {
-      /* eslint-disable no-restricted-syntax, guard-for-in */
-      // TO-DO: check if inherited properties of obj 'user' has to iterated or not
-      // and remove these eslint-disable as per that.
-      for (const key in user) {
-        let userKey = key;
-        if (key.indexOf('_') > -1) {
-          userKey = key.replace('_', '');
-        }
-
-        if (key === 'authId') {
-          // eslint-disable-next-line no-param-reassign
-          user[key] = hash
-            .sha256()
-            .update(user[key])
-            .digest('hex');
-        }
-
-        ldUser.custom[userKey] = user[key];
+    /* eslint-disable no-restricted-syntax, guard-for-in */
+    // TO-DO: check if inherited properties of obj 'user' has to iterated or not
+    // and remove these eslint-disable as per that.
+    for (const key in user) {
+      let userKey = key;
+      if (key.indexOf('_') > -1) {
+        userKey = key.replace('_', '');
       }
-      /* eslint-enable */
+
+      if (key === 'authId') {
+        // eslint-disable-next-line no-param-reassign
+        user[key] = hash
+          .sha256()
+          .update(user[key])
+          .digest('hex');
+      }
+
+      ldUser.custom[userKey] = user[key];
     }
+    /* eslint-enable */
+
     return this.env === 'test'
       ? LDClient.default.initialize(envClientKey, ldUser, options)
       : LDClient.initialize(envClientKey, ldUser, options);
@@ -96,7 +97,7 @@ class LDApi {
    * @param logUpdates Set to true if you want to see the update events
    */
   // eslint-disable-next-line no-unused-vars
-  handleEvents(timeout, ldClient, logUpdates = false, resolve, reject) {
+  handleEvents(timeout, ldClient, logUpdates = false, resolve?, reject?) {
     if (ldClient === undefined) {
       const error = new Error('ERROR: ldClient is undefined');
       if (reject !== undefined) {

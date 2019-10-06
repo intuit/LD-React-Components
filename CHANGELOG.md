@@ -1,3 +1,15 @@
+# v1.0.43 (Sun Oct 06 2019)
+
+#### 🐛  Bug Fix
+
+- Refactor LaunchDarklyClient to use TypeScript [#43](https://github.com/intuit/LD-React-Components/pull/43) ([@cueo](https://github.com/cueo))
+
+#### Authors: 1
+
+- Mohit Mayank ([@cueo](https://github.com/cueo))
+
+---
+
 # v1.0.42 (Sun Oct 06 2019)
 
 #### 🐛  Bug Fix
