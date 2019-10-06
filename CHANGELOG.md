@@ -1,3 +1,16 @@
+# v1.0.45 (Sun Oct 06 2019)
+
+#### 🐛  Bug Fix
+
+- Refactor FeatureDefault to use TS [#45](https://github.com/intuit/LD-React-Components/pull/45) ([@cueo](https://github.com/cueo) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- Mohit Mayank ([@cueo](https://github.com/cueo))
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.44 (Sun Oct 06 2019)
 
 #### 🐛  Bug Fix
