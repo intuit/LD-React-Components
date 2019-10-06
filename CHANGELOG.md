@@ -1,3 +1,16 @@
+# v1.0.42 (Sun Oct 06 2019)
+
+#### 🐛  Bug Fix
+
+- Moved FeatureTrue component to typescript. Issue #37 [#42](https://github.com/intuit/LD-React-Components/pull/42) (pramod_hegde@intuit.com [@pramodrhegde](https://github.com/pramodrhegde))
+
+#### Authors: 2
+
+- Pramod ([@pramodrhegde](https://github.com/pramodrhegde))
+- phegde2 (pramod_hegde@intuit.com)
+
+---
+
 # v1.0.41 (Sat Oct 05 2019)
 
 #### 🐛  Bug Fix
