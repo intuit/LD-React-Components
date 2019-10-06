@@ -1,3 +1,16 @@
+# v1.0.44 (Sun Oct 06 2019)
+
+#### 🐛  Bug Fix
+
+- Refactor FeatureFalse to use TS [#44](https://github.com/intuit/LD-React-Components/pull/44) ([@cueo](https://github.com/cueo) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- Mohit Mayank ([@cueo](https://github.com/cueo))
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.43 (Sun Oct 06 2019)
 
 #### 🐛  Bug Fix
