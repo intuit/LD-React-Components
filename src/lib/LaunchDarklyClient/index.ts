@@ -19,7 +19,7 @@ class LDApi {
     }
     // returns the library and it's methods to use outside of the module
     // eslint-disable-next-line no-param-reassign
-    this.handleEvents((timeout = options.baseTimeout), this.ldClient, logUpdates, undefined, undefined);
+    this.handleEvents((timeout = options.baseTimeout), this.ldClient, logUpdates);
     return this;
   }
 
@@ -97,7 +97,7 @@ class LDApi {
    * @param logUpdates Set to true if you want to see the update events
    */
   // eslint-disable-next-line no-unused-vars
-  handleEvents(timeout, ldClient, logUpdates = false, resolve, reject) {
+  handleEvents(timeout, ldClient, logUpdates = false, resolve?, reject?) {
     if (ldClient === undefined) {
       const error = new Error('ERROR: ldClient is undefined');
       if (reject !== undefined) {
