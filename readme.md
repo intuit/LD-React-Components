@@ -282,6 +282,7 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://www.linkedin.com/in/sam-nesbitt-74ba6a34/"><img src="https://avatars3.githubusercontent.com/u/10536879?v=4" width="100px;" alt="Sam Nesbitt"/><br /><sub><b>Sam Nesbitt</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Swazimodo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/pramodrhegde"><img src="https://avatars1.githubusercontent.com/u/9020200?v=4" width="100px;" alt="Pramod"/><br /><sub><b>Pramod</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=pramodrhegde" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/cueo"><img src="https://avatars1.githubusercontent.com/u/13873846?v=4" width="100px;" alt="Mohit Mayank"/><br /><sub><b>Mohit Mayank</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=cueo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/anki08"><img src="https://avatars2.githubusercontent.com/u/8593629?v=4" width="100px;" alt="ankita sinha"/><br /><sub><b>ankita sinha</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=anki08" title="Code">💻</a></td>
   </tr>
 </table>
 
