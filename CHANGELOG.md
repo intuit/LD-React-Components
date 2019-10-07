@@ -1,3 +1,15 @@
+# v1.0.46 (Mon Oct 07 2019)
+
+#### 🐛  Bug Fix
+
+- Fix TS2367 : No overlap for comparison [#47](https://github.com/intuit/LD-React-Components/pull/47) ([@cueo](https://github.com/cueo))
+
+#### Authors: 1
+
+- Mohit Mayank ([@cueo](https://github.com/cueo))
+
+---
+
 # v1.0.45 (Sun Oct 06 2019)
 
 #### 🐛  Bug Fix
