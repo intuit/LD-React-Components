@@ -1,3 +1,16 @@
+# v1.0.47 (Mon Oct 07 2019)
+
+#### 🐛  Bug Fix
+
+- Refactor for TypeScript: FeatureCase Component #32 [#46](https://github.com/intuit/LD-React-Components/pull/46) ([@anki08](https://github.com/anki08) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- ankita sinha ([@anki08](https://github.com/anki08))
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.46 (Mon Oct 07 2019)
 
 #### 🐛  Bug Fix
