@@ -1,3 +1,15 @@
+# v1.0.48 (Fri Oct 11 2019)
+
+#### 🐛  Bug Fix
+
+- fix: somehow unminifying storybook fixes the static build [#49](https://github.com/intuit/LD-React-Components/pull/49) ([@mmissey](https://github.com/mmissey))
+
+#### Authors: 1
+
+- Marc Missey ([@mmissey](https://github.com/mmissey))
+
+---
+
 # v1.0.47 (Mon Oct 07 2019)
 
 #### 🐛  Bug Fix
