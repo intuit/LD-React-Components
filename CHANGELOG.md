@@ -1,3 +1,15 @@
+# v1.0.49 (Thu Oct 17 2019)
+
+#### ⚠️  Pushed to master
+
+- Pushing old docs for example of upcoming hacktoberfest issues  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.48 (Fri Oct 11 2019)
 
 #### 🐛  Bug Fix
