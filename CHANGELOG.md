@@ -1,3 +1,15 @@
+# v1.0.50 (Fri Oct 18 2019)
+
+#### ⚠️  Pushed to master
+
+- added old docs for examples in storybook  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- poorpaddy ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.49 (Thu Oct 17 2019)
 
 #### ⚠️  Pushed to master
