@@ -77,13 +77,13 @@ describe('Launch Darkly:', () => {
 
   it('init', () => {
     const ldApi = new LDApi('test');
-    const client = ldApi.init(user, envClientKey, options, timeout);
+    const client = ldApi.init({clientParams:{user, envClientKey, options}, timeout});
     expect(client !== undefined).to.equal(true);
   });
 
   it('init without option should throw warning', () => {
     const ldApi = new LDApi('test');
-    const client = ldApi.init(user, envClientKey, null, timeout);
+    const client = ldApi.init({clientParams:{user, envClientKey, options:null}, timeout});
     console.log('client on without ', client);
     expect(client === undefined).to.equal(true);
   });
@@ -91,7 +91,7 @@ describe('Launch Darkly:', () => {
   it('initPromise', done => {
     const ldApi = new LDApi('test');
 
-    ldApi.initWithPromise(user, envClientKey, options, timeout).then(client => {
+    ldApi.initWithPromise({clientParams:{user, envClientKey, options}, timeout}).then(client => {
       expect(client !== undefined).to.equal(true);
       done();
     });
@@ -100,7 +100,7 @@ describe('Launch Darkly:', () => {
   it('createClient', done => {
     const ldApi = new LDApi('test');
 
-    const client = ldApi.createClient(user, envClientKey, options);
+    const client = ldApi.createClient({user, envClientKey, options});
     expect(client !== undefined).to.equal(true);
     done();
   });
@@ -108,8 +108,7 @@ describe('Launch Darkly:', () => {
   it('createClient accepts underscored user keys', done => {
     const ldApi = new LDApi('test');
     const usser = { ...user, key_With_Underscore: 'test' };
-
-    const client = ldApi.createClient(usser, envClientKey, options);
+    const client = ldApi.createClient({user:usser, envClientKey, options});
     expect(client !== undefined).to.equal(true);
     done();
   });
@@ -118,7 +117,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     try {
-      ldApi.createClient(undefined, envClientKey, options);
+      ldApi.createClient({user:undefined, envClientKey, options});
     } catch (ex) {
       expect(ex !== null).to.equal(true);
       done();
@@ -129,7 +128,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     try {
-      ldApi.createClient(user, null, options);
+      ldApi.createClient({user, envClientKey:null, options});
     } catch (ex) {
       expect(ex !== null).to.equal(true);
       done();
@@ -141,7 +140,7 @@ describe('Launch Darkly:', () => {
 
     const userr = {};
     try {
-      ldApi.createClient(userr, null, options);
+      ldApi.createClient({user:userr, envClientKey:null, options});
     } catch (ex) {
       expect(ex !== null).to.equal(true);
       done();
@@ -151,7 +150,7 @@ describe('Launch Darkly:', () => {
   it('handleEvents', done => {
     const ldApi = new LDApi('test');
 
-    const client = ldApi.createClient(user, envClientKey, options);
+    const client = ldApi.createClient({user, envClientKey, options});
     ldApi.handleEvents(timeout, client);
     expect(true).to.equal(true);
     done();
@@ -161,7 +160,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     new Promise((resolve, reject) => {
-      const client = ldApi.createClient(user, envClientKey, options);
+      const client = ldApi.createClient({user, envClientKey, options});
       ldApi.handleEvents(timeout, client, false, resolve, reject);
     }).then(
       resolve => {
@@ -202,7 +201,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     new Promise((resolve, reject) => {
-      const client = ldApi.createClient(user, envClientKey, options);
+      const client = ldApi.createClient({user, envClientKey, options});
       ldApi.handleEvents(1, client, false, resolve, reject);
     }).then(
       resolve => {},
@@ -231,7 +230,7 @@ describe('Launch Darkly:', () => {
 
   it('getFeatureFlag throws and error when there is no default value provided', done => {
     const noClientLDAPI = new LDApi('test');
-    noClientLDAPI.init(user, envClientKey, options, 500, LDClient);
+    noClientLDAPI.init({clientParams:{user, envClientKey, options}, timeout:500, LDClient});
 
     try {
       noClientLDAPI.getFeatureFlag(undefined, 'defaultValue');
@@ -273,7 +272,7 @@ describe('Launch Darkly:', () => {
     // Initialize the api with the mocked LDClient and the config
     const ldApi = new LDApi('test');
 
-    ldApi.init(user, envClientKey, options, 500);
+    ldApi.init({clientParams:{user, envClientKey, options}, timeout:500});
     expect(typeof ldApi.getFeatureFlag).to.equal('function');
     expect(typeof ldApi.getAllFlags).to.equal('function');
     done();
@@ -283,7 +282,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     // The 'ready' event will be emitted within 500ms, resolving the promise and returning the client
-    ldApi.initWithPromise(user, envClientKey, options, 500).then(client => {
+    ldApi.initWithPromise({clientParams:{user, envClientKey, options}, timeout:500}).then(client => {
       expect(typeof client.getFeatureFlag).to.equal('function');
       expect(typeof client.getAllFlags).to.equal('function');
       done();
@@ -294,7 +293,7 @@ describe('Launch Darkly:', () => {
     const ldApi = new LDApi('test');
 
     // Only wait 100ms for the on ready event, the promise will reject
-    ldApi.initWithPromise(user, envClientKey, options, 1).catch(err => {
+    ldApi.initWithPromise({clientParams:{user, envClientKey, options}, timeout:1}).catch(err => {
       expect(err.message).to.deep.equal(errorMessage);
       done();
       // t.deepEqual(err.message, errorMessage);
@@ -303,7 +302,7 @@ describe('Launch Darkly:', () => {
 
   it('getFeatureFlag returns the feature value', done => {
     const ldApi = new LDApi('test');
-    ldApi.init(user, envClientKey, options, 500, LDClient);
+    ldApi.init({clientParams:{user, envClientKey, options}, timeout:500, LDClient});
     const expected = true;
     const actual = ldApi.getFeatureFlag(config.features, false);
     expect(actual).to.equal(expected);
@@ -324,7 +323,7 @@ describe('Launch Darkly:', () => {
 
   it('getAllFlags returns all flags belonging to that userKey', done => {
     const ldApi = new LDApi('test');
-    ldApi.init(user, envClientKey, options, 500, LDClient);
+    ldApi.init({clientParams:{user, envClientKey, options}, timeout:500, LDClient});
     const expected = {
       'forms-mode': false,
       'other-forms-mode': false

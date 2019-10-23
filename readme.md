@@ -284,6 +284,9 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://github.com/cueo"><img src="https://avatars1.githubusercontent.com/u/13873846?v=4" width="100px;" alt="Mohit Mayank"/><br /><sub><b>Mohit Mayank</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=cueo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/anki08"><img src="https://avatars2.githubusercontent.com/u/8593629?v=4" width="100px;" alt="ankita sinha"/><br /><sub><b>ankita sinha</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=anki08" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/Kausam"><img src="https://avatars2.githubusercontent.com/u/19550684?v=4" width="100px;" alt="Kausam"/><br /><sub><b>Kausam</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Kausam" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
