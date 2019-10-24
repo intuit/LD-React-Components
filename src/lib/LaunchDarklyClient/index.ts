@@ -1,18 +1,36 @@
 import hash from 'hash.js';
 import * as LDClient from 'ldclient-js';
 
+interface IUser extends LDClient.LDUser {
+  authId: string
+}
+interface IOptions extends LDClient.LDOptions {
+  baseTimeout: number
+}
+interface IClientParams {
+  user: IUser
+  envClientKey: string
+  options: IOptions
+}
+interface IInitParams {
+  clientParams: IClientParams
+  timeout: number
+  logUpdates?: boolean
+}
+
+
 class LDApi {
 
   private ldClient: LDClient.LDClient;
   private readonly env: String;
 
-  constructor(env) {
+  constructor(env: string) {
     this.env = env;
   }
 
-  init(user, envClientKey, options, timeout, logUpdates = false) {
+  init({clientParams:{user, envClientKey, options}, timeout, logUpdates=false}: IInitParams) {
     // makes the flags available to the client
-    this.ldClient = this.createClient(user, envClientKey, options);
+    this.ldClient = this.createClient({user, envClientKey, options});
     if (!options) {
       // eslint-disable-next-line no-console
       return console.log('Endpoint Options is not provided');
@@ -27,11 +45,11 @@ class LDApi {
    * Initializes the launch darkly client and returns a promise to ensure that
    * methods won't be called until the client emits the 'ready' event
    */
-  initWithPromise(user, envClientKey, options, timeout, logUpdates = false) {
-    this.ldClient = this.createClient(user, envClientKey, options);
+  initWithPromise({clientParams:{user, envClientKey, options}, timeout, logUpdates=false}: IInitParams): Promise<unknown> {
+    this.ldClient = this.createClient({user, envClientKey, options});
 
     return new Promise((resolve, reject) => {
-      return this.handleEvents(timeout, this.ldClient, logUpdates, resolve, reject);
+      return this.handleEvents(timeout,  this.ldClient, logUpdates, resolve, reject);
     });
   }
 
@@ -40,9 +58,9 @@ class LDApi {
    *
    * @param user user object
    * @param envClientKey SDK key for the env
-   * @returns {*}
+   * @returns {LDClient.LDClient} fresh instance of launch darkly client
    */
-  createClient(user, envClientKey, options) {
+  createClient({user, envClientKey, options}: IClientParams): LDClient.LDClient {
     if (typeof user.authId === 'undefined') {
       throw new Error('AuthId was not passed to launchDarkly client');
     }
@@ -97,7 +115,7 @@ class LDApi {
    * @param logUpdates Set to true if you want to see the update events
    */
   // eslint-disable-next-line no-unused-vars
-  handleEvents(timeout, ldClient, logUpdates = false, resolve?, reject?) {
+  handleEvents(timeout:number, ldClient:LDClient.LDClient, logUpdates = false, resolve?, reject?) {
     if (ldClient === undefined) {
       const error = new Error('ERROR: ldClient is undefined');
       if (reject !== undefined) {
@@ -139,9 +157,9 @@ class LDApi {
    *
    * @param featureId LD feature flag id
    * @param defaultValue boolean value that is the default (this is used we can get the feature flag from LD)
-   * @returns {object} Value of feature flag. Flags can be boolean or enums, depending on their configuration
+   * @returns {any} Value of feature flag. Flags can be boolean or enums, depending on their configuration
    */
-  getFeatureFlag(featureId, defaultValue) {
+  getFeatureFlag(featureId: string, defaultValue: boolean) {
     if (defaultValue === undefined) {
       throw new Error('Default value must be passed to getPromiseFeatureFlag');
     }
@@ -162,10 +180,10 @@ class LDApi {
    *
    * @param featureFlag LD feature flag id
    * @param defaultValue boolean value (this is used we can get the feature flag from LD)
-   * @returns {object} Value of feature flag as a promise.
+   * @returns {Promise<unknown>} Value of feature flag as a promise.
    * Flags can be boolean or enums, depending on their configuration
    */
-  getPromiseFeatureFlag(featureFlag, defaultValue) {
+  getPromiseFeatureFlag(featureFlag: string, defaultValue: boolean): Promise<unknown> {
     return new Promise(resolve => {
       resolve(this.getFeatureFlag(featureFlag, defaultValue));
     });
@@ -175,10 +193,10 @@ class LDApi {
    * Grab All feature flags for the user.  If the LD client does not exist, return the default
    * value.
    *
-   * @returns {object} Value of feature flags. Flags can be boolean or enums, depending on their configuration
+   * @returns {LDClient.LDFlagSet} Value of feature flags. Flags can be boolean or enums, depending on their configuration
    */
 
-  getAllFlags() {
+  getAllFlags(): LDClient.LDFlagSet {
     if (!this.ldClient) {
       return {};
     }
