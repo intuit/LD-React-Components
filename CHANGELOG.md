@@ -1,3 +1,15 @@
+# v1.0.51 (Thu Oct 24 2019)
+
+#### 🐛  Bug Fix
+
+- Refactor for TypeScript: LaunchDarklyClient [#54](https://github.com/intuit/LD-React-Components/pull/54) ([@Kausam](https://github.com/Kausam))
+
+#### Authors: 1
+
+- [@Kausam](https://github.com/Kausam)
+
+---
+
 # v1.0.50 (Fri Oct 18 2019)
 
 #### ⚠️  Pushed to master
