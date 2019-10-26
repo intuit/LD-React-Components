@@ -311,7 +311,7 @@ Example: `@all-contributors please add <username> for <contributions>` <br><br>
 
 The bot will then create a Pull Request to add the contributor, then reply with the pull request details.
 
-<img src="./bot-usage.png">
+<img width="500" height="230" src="./bot-usage.png">
 
 ## License
 
