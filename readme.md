@@ -311,6 +311,8 @@ Example: `@all-contributors please add <username> for <contributions>` <br><br>
 
 The bot will then create a Pull Request to add the contributor, then reply with the pull request details.
 
+<img src="./bot-usage.png">
+
 ## License
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components?ref=badge_large)
