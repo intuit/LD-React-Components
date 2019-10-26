@@ -305,8 +305,11 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ### Adding a Contributor
 
-To add a contributor run `yarn all-contributors add <username> <contribution>`.<br><br>
-Example: `yarn all-contributors add poorpaddy code,doc`
+To add a contributor comment on Issue or Pull Request, asking @all-contributors to add a contributor: <br><br>
+Example: `@all-contributors please add <username> for <contributions>` <br><br>
+**`<contribution>:`** See the [Emoji Key (Contribution Types Reference)](https://allcontributors.org/docs/en/emoji-key) for a list of valid contribution types.
+
+The bot will then create a Pull Request to add the contributor, then reply with the pull request details.
 
 ## License
 
