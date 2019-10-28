@@ -1,3 +1,16 @@
+# v1.0.54 (Mon Oct 28 2019)
+
+#### 🐛  Bug Fix
+
+- feat(build): use webpack to compile build [#57](https://github.com/intuit/LD-React-Components/pull/57) ([@Hreherch](https://github.com/Hreherch) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- Bennett Hreherchuk ([@Hreherch](https://github.com/Hreherch))
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.53 (Mon Oct 28 2019)
 
 #### 🐛  Bug Fix
