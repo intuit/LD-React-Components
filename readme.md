@@ -271,8 +271,7 @@ To see the demo go to http://localhost:8080
 ## Contributors ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
+<!-- prettier-ignore -->
 <table>
   <tr>
     <td align="center"><a href="http://www.cmscode.com"><img src="https://avatars3.githubusercontent.com/u/2213076?v=4" width="100px;" alt="Dave Bergschneider"/><br /><sub><b>Dave Bergschneider</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=poorpaddy" title="Code">💻</a> <a href="#design-poorpaddy" title="Design">🎨</a> <a href="https://github.com/intuit/LD-React-Components/commits?author=poorpaddy" title="Documentation">📖</a> <a href="#example-poorpaddy" title="Examples">💡</a> <a href="#maintenance-poorpaddy" title="Maintenance">🚧</a></td>
@@ -294,11 +293,10 @@ To see the demo go to http://localhost:8080
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/Kausam"><img src="https://avatars2.githubusercontent.com/u/19550684?v=4" width="100px;" alt="Kausam"/><br /><sub><b>Kausam</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Kausam" title="Code">💻</a></td>
+    <td align="center"><a href="http://rohanpatel.xyz"><img src="https://avatars1.githubusercontent.com/u/23509745?v=4" width="100px;" alt="Rohan Patel"/><br /><sub><b>Rohan Patel</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=rohan8594" title="Documentation">📖</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
