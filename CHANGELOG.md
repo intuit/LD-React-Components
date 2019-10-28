@@ -1,3 +1,16 @@
+# v1.0.53 (Mon Oct 28 2019)
+
+#### 🐛  Bug Fix
+
+- docs: add rohan8594 as a contributor [#56](https://github.com/intuit/LD-React-Components/pull/56) ([@allcontributors[bot]](https://github.com/allcontributors[bot]) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- [@allcontributors[bot]](https://github.com/allcontributors[bot])
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.52 (Mon Oct 28 2019)
 
 #### 🐛  Bug Fix
