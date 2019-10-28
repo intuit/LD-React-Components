@@ -74,6 +74,8 @@ jobs:
       - run:
           name: Send CodeCov Results
           command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
+      - store_test_results:
+          path: test-results
 
   release:
     <<: *defaults
