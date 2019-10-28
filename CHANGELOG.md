@@ -1,3 +1,15 @@
+# v1.0.52 (Mon Oct 28 2019)
+
+#### 🐛  Bug Fix
+
+- All Contributors Bot [#55](https://github.com/intuit/LD-React-Components/pull/55) ([@rohan8594](https://github.com/rohan8594))
+
+#### Authors: 1
+
+- Rohan Patel ([@rohan8594](https://github.com/rohan8594))
+
+---
+
 # v1.0.51 (Thu Oct 24 2019)
 
 #### 🐛  Bug Fix
