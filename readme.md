@@ -5,7 +5,15 @@
   <p>Semantic component helpers to support LaunchDarkly in your react app.</p>
 </div>
 
-<div align="center"><a href="https://circleci.com/gh/intuit/LD-React-Components"><img src="https://img.shields.io/circleci/project/github/intuit/LD-React-Components/master.svg?style=flat-square&logo=circleci" alt="CircleCI" /></a> <a href="https://codecov.io/gh/intuit/LD-React-Components"><img src="https://codecov.io/gh/intuit/LD-React-Components/branch/master/graph/badge.svg?token=L6URIkiDin" /></a> <a href="#contributors"><img src="https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square&logo=github" alt="All Contributors" /></a> <a href="https://www.npmjs.com/package/ld-react-components"><img src="https://img.shields.io/npm/v/ld-react-components.svg?style=flat-square&logo=npm" alt="npm" /></a> <a href="https://www.npmjs.com/package/ld-react-components"><img src="https://img.shields.io/npm/dt/ld-react-components.svg?style=flat-square&logo=npm" alt="npm" /></a> <a href="https://app.snyk.io/org/poorpaddy/project/c1415dab-3e6f-4438-8e73-26a3e5ce9f55"><img src="https://img.shields.io/snyk/vulnerabilities/github/intuit/LD-React-Components/package.json.svg?style=flat-square&logo=snyk&logoColor=lightgrey" alt="" /></a> <a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components.svg?type=shield"/></a> <a href="https://github.com/intuit/LD-React-Components"><img src="https://img.shields.io/badge/release-auto.svg?style=flat-square&colorA=888888&amp;colorB=9B065A&amp;label=auto&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACzElEQVR4AYXBW2iVBQAA4O+/nLlLO9NM7JSXasko2ASZMaKyhRKEDH2ohxHVWy6EiIiiLOgiZG9CtdgG0VNQoJEXRogVgZYylI1skiKVITPTTtnv3M7+v8UvnG3M+r7APLIRxStn69qzqeBBrMYyBDiL4SD0VeFmRwtrkrI5IjP0F7rjzrSjvbTqwubiLZffySrhRrSghBJa8EBYY0NyLJt8bDBOtzbEY72TldQ1kRm6otana8JK3/kzN/3V/NBPU6HsNnNlZAz/ukOalb0RBJKeQnykd7LiX5Fp/YXuQlfUuhXbg8Di5GL9jbXFq/tLa86PpxPhAPrwCYaiorS8L/uuPJh1hZFbcR8mewrx0d7JShr3F7pNW4vX0GRakKWVk7taDq7uPvFWw8YkMcPVb+vfvfRZ1i7zqFwjtmFouL72y6C/0L0Ie3GvaQXRyYVB3YZNE32/+A/D9bVLcRB3yw3hkRCdaDUtFl6Ykr20aaLvKoqIXUdbMj6GFzAmdxfWx9iIRrkDr1f27cFONGMUo/gRI/jNbIMYxJOoR1cY0OGaVPb5z9mlKbyJP/EsdmIXvsFmM7Ql42nEblX3xI1BbYbTkXCqRnxUbgzPo4T7sQBNeBG7zbAiDI8nWfZDhQWYCG4PFr+HMBQ6l5VPJybeRyJXwsdYJ/cRnlJV0yB4ZlUYtFQIkMZnst8fRrPcKezHCblz2IInMIkPzbbyb9mW42nWInc2xmE0y61AJ06oGsXL5rcOK1UdCbEXiVwNXsEy/6+EbaiVG8eeEAfxvaoSBnCH61uOD7BS1Ul8ESHBKWxCrdyd6EYNKihgEVrwOAbQruoytuBYIFfAc3gVN6iawhjKyNCEpYhVJXgbOzARyaU4hCtYizq5EI1YgiUoIlT1B7ZjByqmRWYbwtdYjoWoN7+LOIQefIqKawLzK6ID69GGpQgwhhEcwGGUzfEPAiPqsCXadFsAAAAASUVORK5CYII=" alt="Auto Release" /></a> <a href="https://intuit.github.io/LD-React-Components/"><img src="https://img.shields.io/badge/example-demo-blue.svg?style=flat-square&logo=github" alt="npm" /></a></div>
+[![Build](https://img.shields.io/circleci/project/github/intuit/LD-React-Components/master.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/intuit/LD-React-Components)
+[![Coverage](https://codecov.io/gh/intuit/LD-React-Components/branch/master/graph/badge.svg?token=L6URIkiDin)](https://codecov.io/gh/intuit/LD-React-Components)
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square&logo=github)](#contributors)
+[![Npm](https://img.shields.io/npm/v/ld-react-components.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/ld-react-components)
+[![Downloads](https://img.shields.io/npm/dt/ld-react-components.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/ld-react-components)
+[![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/intuit/LD-React-Components/package.json.svg?style=flat-square&logo=snyk&logoColor=lightgrey)](https://app.snyk.io/org/poorpaddy/project/c1415dab-3e6f-4438-8e73-26a3e5ce9f55)
+[![License Scan](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fintuit%2FLD-React-Components?ref=badge_shield)
+[![Auto Release](https://img.shields.io/badge/release-auto.svg?style=flat-square&colorA=888888&amp;colorB=9B065A&amp;label=auto&amp;logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAACzElEQVR4AYXBW2iVBQAA4O+/nLlLO9NM7JSXasko2ASZMaKyhRKEDH2ohxHVWy6EiIiiLOgiZG9CtdgG0VNQoJEXRogVgZYylI1skiKVITPTTtnv3M7+v8UvnG3M+r7APLIRxStn69qzqeBBrMYyBDiL4SD0VeFmRwtrkrI5IjP0F7rjzrSjvbTqwubiLZffySrhRrSghBJa8EBYY0NyLJt8bDBOtzbEY72TldQ1kRm6otana8JK3/kzN/3V/NBPU6HsNnNlZAz/ukOalb0RBJKeQnykd7LiX5Fp/YXuQlfUuhXbg8Di5GL9jbXFq/tLa86PpxPhAPrwCYaiorS8L/uuPJh1hZFbcR8mewrx0d7JShr3F7pNW4vX0GRakKWVk7taDq7uPvFWw8YkMcPVb+vfvfRZ1i7zqFwjtmFouL72y6C/0L0Ie3GvaQXRyYVB3YZNE32/+A/D9bVLcRB3yw3hkRCdaDUtFl6Ykr20aaLvKoqIXUdbMj6GFzAmdxfWx9iIRrkDr1f27cFONGMUo/gRI/jNbIMYxJOoR1cY0OGaVPb5z9mlKbyJP/EsdmIXvsFmM7Ql42nEblX3xI1BbYbTkXCqRnxUbgzPo4T7sQBNeBG7zbAiDI8nWfZDhQWYCG4PFr+HMBQ6l5VPJybeRyJXwsdYJ/cRnlJV0yB4ZlUYtFQIkMZnst8fRrPcKezHCblz2IInMIkPzbbyb9mW42nWInc2xmE0y61AJ06oGsXL5rcOK1UdCbEXiVwNXsEy/6+EbaiVG8eeEAfxvaoSBnCH61uOD7BS1Ul8ESHBKWxCrdyd6EYNKihgEVrwOAbQruoytuBYIFfAc3gVN6iawhjKyNCEpYhVJXgbOzARyaU4hCtYizq5EI1YgiUoIlT1B7ZjByqmRWYbwtdYjoWoN7+LOIQefIqKawLzK6ID69GGpQgwhhEcwGGUzfEPAiPqsCXadFsAAAAASUVORK5CYII=)](https://github.com/intuit/LD-React-Components)
+[![Example](https://img.shields.io/badge/example-demo-blue.svg?style=flat-square&logo=github)](https://intuit.github.io/LD-React-Components/)
 
 
 ## Usage
@@ -305,8 +313,13 @@ This project follows the [all-contributors](https://github.com/all-contributors/
 
 ### Adding a Contributor
 
-To add a contributor run `yarn all-contributors add <username> <contribution>`.<br><br>
-Example: `yarn all-contributors add poorpaddy code,doc`
+To add a contributor comment on Issue or Pull Request, asking @all-contributors to add a contributor: <br><br>
+Example: `@all-contributors please add <username> for <contributions>` <br><br>
+**`<contribution>:`** See the [Emoji Key (Contribution Types Reference)](https://allcontributors.org/docs/en/emoji-key) for a list of valid contribution types.
+
+The bot will then create a Pull Request to add the contributor, then reply with the pull request details.
+
+<img width="500" height="230" src="./bot-usage.png">
 
 ## License
 
