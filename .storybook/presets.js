@@ -1,1 +1,1 @@
-module.exports = ['@storybook/addon-docs/react/preset'];
+export default '@storybook/addon-docs/react/preset';

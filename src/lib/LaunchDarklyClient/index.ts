@@ -205,4 +205,4 @@ class LDApi {
   }
 }
 
-module.exports = LDApi;
+export default LDApi;
