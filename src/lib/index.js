@@ -6,7 +6,7 @@ import FeatureFalse from './FeatureFalse';
 import FeatureFlag from './FeatureFlag';
 import launchDarklyClient from './LaunchDarklyClient';
 
-module.exports = {
+export {
   FeatureDefault,
   FeatureTrue,
   FeatureSwitch,
