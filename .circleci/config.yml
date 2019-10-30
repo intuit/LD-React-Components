@@ -80,7 +80,7 @@ jobs:
           name: Send CodeCov Results
           command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
       - store_test_results:
-          path: test-results
+          path: test-reports
 
   release:
     <<: *defaults
