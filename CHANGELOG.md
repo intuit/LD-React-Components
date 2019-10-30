@@ -1,3 +1,15 @@
+# v1.0.59 (Wed Oct 30 2019)
+
+#### 🐛  Bug Fix
+
+- docs: add funkadelic as a contributor [#64](https://github.com/intuit/LD-React-Components/pull/64) ([@allcontributors[bot]](https://github.com/allcontributors[bot]))
+
+#### Authors: 1
+
+- [@allcontributors[bot]](https://github.com/allcontributors[bot])
+
+---
+
 # v1.0.58 (Wed Oct 30 2019)
 
 #### 🐛  Bug Fix
