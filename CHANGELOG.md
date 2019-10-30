@@ -1,3 +1,15 @@
+# v1.0.56 (Wed Oct 30 2019)
+
+#### 🐛  Bug Fix
+
+- Revert "feat(build): use webpack to compile build (#57)" [#60](https://github.com/intuit/LD-React-Components/pull/60) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.55 (Wed Oct 30 2019)
 
 #### 🐛  Bug Fix
