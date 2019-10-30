@@ -18,7 +18,7 @@
     "start": "start-storybook -p 6010",
     "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage ./docs",
-    "test": "yarn add --dev jest-junit && yarn build && jest --coverage --reporters=default  --reporters=jest-junit && mv junit.xml test-reports/results.xml",
+    "test": "yarn add --dev jest-junit && yarn build && jest --coverage --reporters=default  --reporters=jest-junit && mkdir -p test-reports/jest && mv junit.xml test-reports/jest/results.xml",
     "lint": "eslint src/",
     "build": "babel src/lib -d dist --copy-files",
     "build:watch": "babel src/lib -w -d lib --copy-files",
