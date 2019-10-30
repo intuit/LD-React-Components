@@ -1,3 +1,15 @@
+# v1.0.55 (Wed Oct 30 2019)
+
+#### 🐛  Bug Fix
+
+- Add test summaries for CircleCI [#59](https://github.com/intuit/LD-React-Components/pull/59) ([@funkadelic](https://github.com/funkadelic))
+
+#### Authors: 1
+
+- Norman Yee ([@funkadelic](https://github.com/funkadelic))
+
+---
+
 # v1.0.54 (Mon Oct 28 2019)
 
 #### 🐛  Bug Fix
