@@ -170,6 +170,15 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "funkadelic",
+      "name": "Norman Yee",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/155019?v=4",
+      "profile": "https://github.com/funkadelic",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7
