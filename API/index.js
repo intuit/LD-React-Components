@@ -1,3 +1,2 @@
-const LDApi = require('../dist');
-
-export default new LDApi();
+var LDApi = require('../dist/LaunchDarklyClient/index.js');
+module.exports = new LDApi();

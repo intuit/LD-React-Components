@@ -1,12 +1,12 @@
-const path = require('path');
+import path from 'path';
 
-module.exports = {
+export default () => ({
   mode: 'production',
   entry: {
-    index: path.join(__dirname, 'src/lib/index.js')
+    index: path.join(__dirname, 'src/docs/index.js')
   },
   output: {
-    path: path.join(__dirname, 'dist/'),
+    path: path.join(__dirname, 'src/dist'),
     filename: '[name].js',
     libraryTarget: 'umd',
     globalObject: 'this'
@@ -53,4 +53,4 @@ module.exports = {
     react: 'react',
     reactDOM: 'react-dom'
   }
-};
+});
