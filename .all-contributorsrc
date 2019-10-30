@@ -179,6 +179,15 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "himanshupnt",
+      "name": "Himanshu Pant",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8342344?v=4",
+      "profile": "https://himanshupnt.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
