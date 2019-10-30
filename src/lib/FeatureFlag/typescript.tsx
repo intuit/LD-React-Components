@@ -10,7 +10,7 @@ type FeatureFlagProps = {
 }
 
 /**
- * FeatureFlag
+ * FeatureFlag renders your child components based on LD flags
  */
 function FeatureFlag({ children, flagKey, appFlags }: FeatureFlagProps) {
     function elementMatchPluginName(element: any, name: string) {
