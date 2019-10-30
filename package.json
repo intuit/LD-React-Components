@@ -1,6 +1,6 @@
 {
   "name": "ld-react-components",
-  "version": "1.0.54",
+  "version": "1.0.55",
   "description": "Semantic component helpers to support LaunchDarkly in your react app.",
   "main": "dist/index.js",
   "author": {
