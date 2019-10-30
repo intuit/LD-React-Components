@@ -75,6 +75,11 @@ jobs:
       - run:
           command: |
             mkdir -p ${TEST_REPORTS}
+      - run:
+          name: Run tests with JUnit as reporter
+          command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+          environment:
+            JEST_JUNIT_OUTPUT_DIR: "test-reports/junit/js-test-results.xml"
       - run: *test
       - run:
           name: Send CodeCov Results
