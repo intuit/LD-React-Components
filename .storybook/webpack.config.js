@@ -26,6 +26,11 @@ module.exports = {
             loader: require.resolve('react-docgen-typescript-loader'),
           },
         ],
+      },
+      {
+        test: /\.stories\.jsx?$/,
+        loaders: [require.resolve('@storybook/source-loader')],
+        enforce: 'pre',
       }
     ],
   },
