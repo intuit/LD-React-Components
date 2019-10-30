@@ -1,3 +1,15 @@
+# v1.0.60 (Wed Oct 30 2019)
+
+#### 🐛  Bug Fix
+
+- ISSUE# 52 - add storybook stories [#65](https://github.com/intuit/LD-React-Components/pull/65) ([@himanshupnt](https://github.com/himanshupnt))
+
+#### Authors: 1
+
+- Himanshu Pant ([@himanshupnt](https://github.com/himanshupnt))
+
+---
+
 # v1.0.59 (Wed Oct 30 2019)
 
 #### 🐛  Bug Fix
