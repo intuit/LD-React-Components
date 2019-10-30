@@ -4,6 +4,8 @@ defaults: &defaults
   working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
+  environment:
+    TEST_REPORTS: ~/ld-react-components/test-reports
 
 aliases:
   # Circle related commands
@@ -70,6 +72,9 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/ld-react-components
+      - run:
+          command: |
+            mkdir -p ${TEST_REPORTS}
       - run: *test
       - run:
           name: Send CodeCov Results
