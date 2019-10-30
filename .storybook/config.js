@@ -3,11 +3,12 @@ import { configure, addParameters } from '@storybook/react';
 import "core-js/stable";
 import "regenerator-runtime/runtime";
 import { withA11y } from '@storybook/addon-a11y';
-
+import { withKnobs } from '@storybook/addon-knobs';
 // automatically import all files ending in *.stories.js
 configure(require.context('../src', true, /stories\.(js|jsx|mdx)?$/), module);
 
 addDecorator(withA11y);
+addDecorator(withKnobs);
 
 addParameters({
   options: {
