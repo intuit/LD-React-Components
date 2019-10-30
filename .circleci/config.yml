@@ -27,9 +27,6 @@ aliases:
   - &lint
     name: Lint
     command: yarn lint
-  - &test
-    name: Test
-    command: yarn test
   - &build
     name: Build
     command: yarn build
@@ -72,15 +69,17 @@ jobs:
           at: ~/ld-react-components
       - run:
           name: Run tests with JUnit as reporter
-          command: yarn jest --ci --runInBand
+          command: yarn jest --ci --runInBand --coverage
           environment:
-            JEST_JUNIT_OUTPUT_DIR: "test-reports/junit/js-test-results.xml"
-      - run: *test
+            JEST_JUNIT_OUTPUT_DIR: "test-results/jest"
+            JEST_JUNIT_OUTPUT_NAME: "junit.xml"
+      - store_test_results:
+          path: test-results
+      - store_artifacts:
+          path: coverage
       - run:
           name: Send CodeCov Results
           command: bash <(curl -s https://codecov.io/bash) -t $CODECOV_KEY
-      - store_test_results:
-          path: test-reports
 
   release:
     <<: *defaults
