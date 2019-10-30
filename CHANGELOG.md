@@ -1,3 +1,16 @@
+# v1.0.58 (Wed Oct 30 2019)
+
+#### 🐛  Bug Fix
+
+- docs: add tekgal as a contributor [#63](https://github.com/intuit/LD-React-Components/pull/63) ([@allcontributors[bot]](https://github.com/allcontributors[bot]) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- [@allcontributors[bot]](https://github.com/allcontributors[bot])
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.57 (Wed Oct 30 2019)
 
 #### 🐛  Bug Fix
