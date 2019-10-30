@@ -4,8 +4,6 @@ defaults: &defaults
   working_directory: ~/ld-react-components
   docker:
     - image: circleci/node:8.14-browsers
-  environment:
-    TEST_REPORTS: ~/ld-react-components/test-reports
 
 aliases:
   # Circle related commands
@@ -73,11 +71,8 @@ jobs:
       - attach_workspace:
           at: ~/ld-react-components
       - run:
-          command: |
-            mkdir -p ${TEST_REPORTS}
-      - run:
           name: Run tests with JUnit as reporter
-          command: jest --ci --runInBand --reporters=default --reporters=jest-junit
+          command: yarn jest --ci --runInBand
           environment:
             JEST_JUNIT_OUTPUT_DIR: "test-reports/junit/js-test-results.xml"
       - run: *test
