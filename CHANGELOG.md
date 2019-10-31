@@ -1,3 +1,15 @@
+# v1.0.63 (Thu Oct 31 2019)
+
+#### 🐛  Bug Fix
+
+- Updating import extension from js to ts [#68](https://github.com/intuit/LD-React-Components/pull/68) ([@erwintj](https://github.com/erwintj))
+
+#### Authors: 1
+
+- Trevor Erwin ([@erwintj](https://github.com/erwintj))
+
+---
+
 # v1.0.62 (Thu Oct 31 2019)
 
 #### 🐛  Bug Fix
