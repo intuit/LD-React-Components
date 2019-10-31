@@ -1,3 +1,16 @@
+# v1.0.62 (Thu Oct 31 2019)
+
+#### 🐛  Bug Fix
+
+- Follow-up to pull#59 (saving CircleCI test summaries) [#62](https://github.com/intuit/LD-React-Components/pull/62) ([@funkadelic](https://github.com/funkadelic) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- Norman Yee ([@funkadelic](https://github.com/funkadelic))
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.61 (Wed Oct 30 2019)
 
 #### 🐛  Bug Fix
