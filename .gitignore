@@ -26,6 +26,7 @@ log/
 /errorShots/
 /screenshots/
 stats.json
+/test-results/
 # Build folder #
 local
 build
