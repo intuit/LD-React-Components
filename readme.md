@@ -297,6 +297,7 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://github.com/tekgal"><img src="https://avatars0.githubusercontent.com/u/23368862?v=4" width="100px;" alt="tekgal"/><br /><sub><b>tekgal</b></sub></a><br /><a href="#infra-tekgal" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://github.com/funkadelic"><img src="https://avatars2.githubusercontent.com/u/155019?v=4" width="100px;" alt="Norman Yee"/><br /><sub><b>Norman Yee</b></sub></a><br /><a href="#infra-funkadelic" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://himanshupnt.com"><img src="https://avatars3.githubusercontent.com/u/8342344?v=4" width="100px;" alt="Himanshu Pant"/><br /><sub><b>Himanshu Pant</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=himanshupnt" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/erwintj"><img src="https://avatars0.githubusercontent.com/u/13356723?v=4" width="100px;" alt="Trevor Erwin"/><br /><sub><b>Trevor Erwin</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/issues?q=author%3Aerwintj" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 
