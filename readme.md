@@ -295,6 +295,8 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://github.com/Kausam"><img src="https://avatars2.githubusercontent.com/u/19550684?v=4" width="100px;" alt="Kausam"/><br /><sub><b>Kausam</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=Kausam" title="Code">💻</a></td>
     <td align="center"><a href="http://rohanpatel.xyz"><img src="https://avatars1.githubusercontent.com/u/23509745?v=4" width="100px;" alt="Rohan Patel"/><br /><sub><b>Rohan Patel</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=rohan8594" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/tekgal"><img src="https://avatars0.githubusercontent.com/u/23368862?v=4" width="100px;" alt="tekgal"/><br /><sub><b>tekgal</b></sub></a><br /><a href="#infra-tekgal" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://github.com/funkadelic"><img src="https://avatars2.githubusercontent.com/u/155019?v=4" width="100px;" alt="Norman Yee"/><br /><sub><b>Norman Yee</b></sub></a><br /><a href="#infra-funkadelic" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://himanshupnt.com"><img src="https://avatars3.githubusercontent.com/u/8342344?v=4" width="100px;" alt="Himanshu Pant"/><br /><sub><b>Himanshu Pant</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=himanshupnt" title="Documentation">📖</a></td>
   </tr>
 </table>
 
