@@ -15,7 +15,7 @@
       "noImplicitThis": true,
       "noImplicitAny": false,
       "noUnusedLocals": true,
-      "outDir": "build/lib",
+      "outDir": "dist",
       "resolveJsonModule": true,
       "rootDirs": ["src", "stories"],
       "sourceMap": true,
