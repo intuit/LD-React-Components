@@ -20,7 +20,7 @@
     "clean": "rimraf ./dist ./coverage ./docs ./test-results",
     "test": "yarn add --dev jest-junit && yarn build && jest --coverage --reporters=default --reporters=jest-junit && mkdir -p test-reports/jest && mv junit.xml test-reports/jest/results.xml",
     "lint": "eslint src/",
-    "build": "babel src/lib -d dist --copy-files",
+    "build": "babel src/lib -d dist --copy-files && tsc",
     "build:watch": "babel src/lib -w -d lib --copy-files",
     "docs:build": "build-storybook -o docs",
     "docs:config": "mkdirp ./docs/.circleci/ && cp .storybook/config.yml docs/.circleci/ && cp -R .storybook/old-docs docs/",

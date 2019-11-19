@@ -1,7 +1,7 @@
 import React from 'react';
 import { text, object } from '@storybook/addon-knobs';
 
-import FeatureFlag from './typescript.tsx';
+import FeatureFlag from './index.tsx';
 import FeatureSwitch from '../FeatureSwitch';
 import FeatureCase from '../FeatureCase';
 import FeatureDefault from '../FeatureDefault';

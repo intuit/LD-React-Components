@@ -69,11 +69,11 @@ function FeatureFlag({ children, flagKey, appFlags }: FeatureFlagProps) {
           );
           return;
         }
+        const partial: Partial<{}> = {};
+        partial['flagKey'] = flagKey;
+        partial['appFlags'] = appFlags;
         childArray.push(
-          React.cloneElement(element,{
-            flagKey,
-            appFlags
-          })
+          React.cloneElement(element, partial)
         );
         isChildPluginComponent = true;
       }
