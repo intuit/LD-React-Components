@@ -31,7 +31,7 @@ const FeatureSwitch: React.FC<IComponentProps> = (props) => {
     if (React.isValidElement(element) && (element as any).type === FeatureCase && !breakIt) {
       // TODO use proper type cast here once they are defined
       const { condition, allowBreak } = (element as any).props;
-      if ((appFlags[flagKey] && appFlags[flagKey].value) === condition) {
+      if (appFlags[flagKey] === condition) {
         childArray.push(element);
         breakIt = allowBreak;
       }

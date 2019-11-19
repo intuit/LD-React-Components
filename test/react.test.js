@@ -13,24 +13,9 @@ import {
 Enzyme.configure({ adapter: new Adapter() });
 
 const appFlags = {
-  a: {
-    value: true,
-    version: 4,
-    variation: 0,
-    trackEvents: false
-  },
-  b: {
-    value: false,
-    version: 5,
-    variation: 0,
-    trackEvents: false
-  },
-  switcher: {
-    value: 'switch',
-    version: 5,
-    variation: 0,
-    trackEvents: false
-  }
+  a: true,
+  b: false,
+  switcher: 'switch'
 };
 
 describe('Launch Darkly Plugin ', () => {

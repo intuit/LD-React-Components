@@ -36,7 +36,7 @@ function FeatureFlag({ children, flagKey, appFlags }: FeatureFlagProps) {
           return;
         }
         // if the appFlags has the flagKey, render the child
-        if (appFlags[flagKey] && appFlags[flagKey].value) {
+        if (appFlags[flagKey]) {
           childArray.push(element);
         }
         isChildPluginComponent = true;
@@ -52,7 +52,7 @@ function FeatureFlag({ children, flagKey, appFlags }: FeatureFlagProps) {
           );
           return;
         }
-        if (!appFlags[flagKey] || (appFlags[flagKey] && !appFlags[flagKey].value)) {
+        if (!appFlags[flagKey]) {
           childArray.push(element);
         }
         isChildPluginComponent = true;
@@ -81,7 +81,7 @@ function FeatureFlag({ children, flagKey, appFlags }: FeatureFlagProps) {
       // therefore, we simply render it as its under FeatureTrue
       if (!isChildPluginComponent) {
         isNonPluginComponent = true;
-        if (appFlags[flagKey] && appFlags[flagKey].value) {
+        if (appFlags[flagKey]) {
           childArray.push(element);
         }
       }

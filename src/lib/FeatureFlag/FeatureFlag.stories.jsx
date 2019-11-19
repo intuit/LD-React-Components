@@ -17,8 +17,8 @@ export default {
 };
 
 const applicationKeys = {
-  'integration-test': { value: true, version: 3 },
-  'multivariate-test': { value: 'multivariate-test-1', version: 5 }
+  'integration-test': true,
+  'multivariate-test': 'multivariate-test-1'
 };
 
 export const standardUsage = () => (
@@ -55,7 +55,7 @@ export const withFeatureTrueAndFeatureFalse = () => (
 
 export const withNesting = () => {
   const flags = {
-    'nested-flag-key': { value: 'nested-flag-key-1', version: 5 }
+    'nested-flag-key': 'nested-flag-key-1'
   };
   return (
     <FeatureFlag flagKey="multivariate-test" appFlags={applicationKeys}>
