@@ -1,2 +1,2 @@
-var LDApi = require('../dist/LaunchDarklyClient/index.ts');
+var LDApi = require('../dist/LaunchDarklyClient/index.js');
 module.exports = new LDApi();
