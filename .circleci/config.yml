@@ -92,7 +92,7 @@ jobs:
             - "23:b5:04:c6:6a:82:2b:c8:ae:25:39:90:6a:b7:de:cd"
       - run: git config user.email dave@cmscode.com
       - run: git config user.name "poorpaddy"
-      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: rm -rf ~/.ssh/ && mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
           command: yarn release
@@ -107,7 +107,7 @@ jobs:
             - "23:b5:04:c6:6a:82:2b:c8:ae:25:39:90:6a:b7:de:cd"
       - run: git config user.email dave@cmscode.com
       - run: git config user.name "poorpaddy"
-      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run: rm -rf ~/.ssh/ && mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Build Docs
           command: yarn docs:build
