@@ -37,11 +37,6 @@ aliases:
     command: yarn build
 
 jobs:
-  deploy-job:
-    steps:
-      - add_ssh_keys:
-          fingerprints:
-            - "23:b5:04:c6:6a:82:2b:c8:ae:25:39:90:6a:b7:de:cd"
   install:
     <<: *defaults
     steps:
@@ -121,6 +116,12 @@ workflows:
   version: 2
   build_and_test:
     jobs:
+    deploy-job:
+      steps:
+        - add_ssh_keys:
+            fingerprints:
+              - "23:b5:04:c6:6a:82:2b:c8:ae:25:39:90:6a:b7:de:cd"
+              
       - install
 
       - build:
