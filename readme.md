@@ -7,7 +7,7 @@
 
 [![Build](https://img.shields.io/circleci/project/github/intuit/LD-React-Components/master.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/intuit/LD-React-Components)
 [![Coverage](https://codecov.io/gh/intuit/LD-React-Components/branch/master/graph/badge.svg?token=L6URIkiDin)](https://codecov.io/gh/intuit/LD-React-Components)
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square&logo=github)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square&logo=github)](#contributors)
 [![Npm](https://img.shields.io/npm/v/ld-react-components.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/ld-react-components)
 [![Downloads](https://img.shields.io/npm/dt/ld-react-components.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/ld-react-components)
 [![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/github/intuit/LD-React-Components/package.json.svg?style=flat-square&logo=snyk&logoColor=lightgrey)](https://app.snyk.io/org/poorpaddy/project/c1415dab-3e6f-4438-8e73-26a3e5ce9f55)
