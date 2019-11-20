@@ -85,11 +85,13 @@ jobs:
   release:
     <<: *defaults
     steps:
+      - attach_workspace:
+          at: ~/ld-react-components
       - add_ssh_keys:
           fingerprints:
             - "23:b5:04:c6:6a:82:2b:c8:ae:25:39:90:6a:b7:de:cd"
-      - attach_workspace:
-          at: ~/ld-react-components
+      - run: git config user.email dave@cmscode.com
+      - run: git config user.name "poorpaddy"
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
@@ -103,6 +105,8 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "23:b5:04:c6:6a:82:2b:c8:ae:25:39:90:6a:b7:de:cd"
+      - run: git config user.email dave@cmscode.com
+      - run: git config user.name "poorpaddy"
       - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Build Docs
