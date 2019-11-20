@@ -1,3 +1,24 @@
+# v1.0.65 (Wed Nov 20 2019)
+
+#### 🐛  Bug Fix
+
+- updated the count [#73](https://github.com/intuit/LD-React-Components/pull/73) (dave_bergschneider@intuit.com [@poorpaddy](https://github.com/poorpaddy))
+- Fix/payload [#70](https://github.com/intuit/LD-React-Components/pull/70) ([@Buranch](https://github.com/Buranch))
+- Changing the entry to the index.js instead of .ts [#72](https://github.com/intuit/LD-React-Components/pull/72) ([@Buranch](https://github.com/Buranch))
+- fix the typescript build [#71](https://github.com/intuit/LD-React-Components/pull/71) ([@Buranch](https://github.com/Buranch))
+
+#### ⚠️  Pushed to master
+
+- manual ssh key  (dave_bergschneider@intuit.com)
+
+#### Authors: 3
+
+- Buranch ([@Buranch](https://github.com/Buranch))
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.64 (Thu Oct 31 2019)
 
 #### 🐛  Bug Fix
