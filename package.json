@@ -54,7 +54,7 @@
     "@storybook/react": "^5.2.8",
     "@types/enzyme": "^3.10.4",
     "@types/enzyme-adapter-react-16": "^1.0.5",
-    "@types/jest": "^24.0.18",
+    "@types/jest": "^24.0.24",
     "@types/node": "^12.7.10",
     "@types/react": "^16.9.4",
     "@types/react-dom": "^16.9.1",
@@ -114,6 +114,7 @@
     "prop-types": "^15.7.2"
   },
   "peerDependencies": {
+    "eslint-plugin-react-hooks": "^1.7.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
