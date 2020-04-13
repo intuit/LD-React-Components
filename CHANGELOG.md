@@ -1,3 +1,15 @@
+# v1.0.72 (Mon Apr 13 2020)
+
+#### ⚠️  Pushed to master
+
+- updating minor dependency to force build in circleci  (dave_bergschneider@intuit.com)
+
+#### Authors: 1
+
+- Bergschneider, Dave (dave_bergschneider@intuit.com)
+
+---
+
 # v1.0.65 (Wed Nov 20 2019)
 
 #### 🐛  Bug Fix
