@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6010",
-    "prepare": "yarn build",
+    "prepare": "npm run snyk-protect && yarn build",
     "clean": "rimraf ./dist ./coverage ./docs ./test-results",
     "test": "yarn add --dev jest-junit && yarn build && jest --coverage --reporters=default --reporters=jest-junit && mkdir -p test-reports/jest && mv junit.xml test-reports/jest/results.xml",
     "lint": "eslint src/",
@@ -25,7 +25,8 @@
     "docs:build": "build-storybook -o docs",
     "docs:config": "mkdirp ./docs/.circleci/ && cp .storybook/config.yml docs/.circleci/ && cp -R .storybook/old-docs docs/",
     "docs:publish": "push-dir --cleanup --dir=docs --branch=gh-pages --force",
-    "release": "auto shipit"
+    "release": "auto shipit",
+    "snyk-protect": "snyk protect"
   },
   "keywords": [
     "launch-darkly",
@@ -111,10 +112,12 @@
     "@storybook/addon-knobs": "^5.3.18",
     "hash.js": "~1.1.7",
     "ldclient-js": "^2.10.2",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "snyk": "^1.323.0"
   },
   "peerDependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1"
-  }
+  },
+  "snyk": true
 }
