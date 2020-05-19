@@ -108,7 +108,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
-    "@storybook/addon-knobs": "^5.2.5",
+    "@storybook/addon-knobs": "^5.3.18",
     "hash.js": "~1.1.7",
     "ldclient-js": "^2.10.2",
     "prop-types": "^15.7.2"
