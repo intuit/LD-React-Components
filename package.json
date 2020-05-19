@@ -106,7 +106,7 @@
     "typescript": "^3.6.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "@storybook/addon-knobs": "^5.3.18",
