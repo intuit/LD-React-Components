@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6010",
-    "prepare": "npm run snyk-protect && yarn build",
+    "prepare": "yarn build",
     "clean": "rimraf ./dist ./coverage ./docs ./test-results",
     "test": "yarn add --dev jest-junit && yarn build && jest --coverage --reporters=default --reporters=jest-junit && mkdir -p test-reports/jest && mv junit.xml test-reports/jest/results.xml",
     "lint": "eslint src/",
@@ -60,7 +60,7 @@
     "@types/react": "^16.9.4",
     "@types/react-dom": "^16.9.1",
     "@types/storybook__react": "^4.0.2",
-    "all-contributors-cli": "^6.9.1",
+    "all-contributors-cli": "^6.14.2",
     "auto": "^7.6.2",
     "awesome-typescript-loader": "^5.2.1",
     "babel-eslint": "^10.0.3",
