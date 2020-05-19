@@ -95,7 +95,7 @@
     "prettier": "^1.18.2",
     "push-dir": "^0.4.1",
     "react": "^16.10.1",
-    "react-docgen-typescript-loader": "^3.3.0",
+    "react-docgen-typescript-loader": "^3.7.2",
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.12.21",
     "react-test-renderer": "^16.13.1",
