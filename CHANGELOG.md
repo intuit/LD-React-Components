@@ -1,3 +1,16 @@
+# v1.0.74 (Tue May 19 2020)
+
+#### 🐛  Bug Fix
+
+- [Snyk] Fix for 1 vulnerabilities [#78](https://github.com/intuit/LD-React-Components/pull/78) ([@snyk-bot](https://github.com/snyk-bot) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+- Snyk bot ([@snyk-bot](https://github.com/snyk-bot))
+
+---
+
 # v1.0.73 (Tue May 19 2020)
 
 #### 🐛  Bug Fix
