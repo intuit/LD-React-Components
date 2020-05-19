@@ -1,3 +1,19 @@
+# v1.0.73 (Tue May 19 2020)
+
+#### 🐛  Bug Fix
+
+- First round of NPM Updates [#77](https://github.com/intuit/LD-React-Components/pull/77) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### ⚠️  Pushed to master
+
+- fix for eslint  ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.72 (Mon Apr 13 2020)
 
 #### ⚠️  Pushed to master
