@@ -116,7 +116,7 @@
     "snyk": "^1.323.0"
   },
   "peerDependencies": {
-    "react": "^16.10.1",
+    "react": "^16.13.1",
     "react-dom": "^16.10.1"
   },
   "snyk": true
