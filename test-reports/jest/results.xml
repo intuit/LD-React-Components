@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="32" failures="0" time="2.426">
-  <testsuite name="Launch Darkly:" errors="0" failures="0" skipped="0" timestamp="2020-05-19T23:46:46" time="1.034" tests="23">
-    <testcase classname="Launch Darkly: init" name="Launch Darkly: init" time="0.005">
+<testsuites name="jest tests" tests="32" failures="0" time="2.454">
+  <testsuite name="Launch Darkly:" errors="0" failures="0" skipped="0" timestamp="2020-05-19T23:47:59" time="1.031" tests="23">
+    <testcase classname="Launch Darkly: init" name="Launch Darkly: init" time="0.004">
     </testcase>
-    <testcase classname="Launch Darkly: init without option should throw warning" name="Launch Darkly: init without option should throw warning" time="0.007">
+    <testcase classname="Launch Darkly: init without option should throw warning" name="Launch Darkly: init without option should throw warning" time="0.006">
     </testcase>
-    <testcase classname="Launch Darkly: initPromise" name="Launch Darkly: initPromise" time="0.012">
+    <testcase classname="Launch Darkly: initPromise" name="Launch Darkly: initPromise" time="0.013">
     </testcase>
     <testcase classname="Launch Darkly: createClient" name="Launch Darkly: createClient" time="0.001">
     </testcase>
@@ -37,7 +37,7 @@
     </testcase>
     <testcase classname="Launch Darkly: LD API initializes with appropriate api" name="Launch Darkly: LD API initializes with appropriate api" time="0.001">
     </testcase>
-    <testcase classname="Launch Darkly: LD API returns promise that will return a ready client" name="Launch Darkly: LD API returns promise that will return a ready client" time="0.011">
+    <testcase classname="Launch Darkly: LD API returns promise that will return a ready client" name="Launch Darkly: LD API returns promise that will return a ready client" time="0.01">
     </testcase>
     <testcase classname="Launch Darkly: LD API returns promise that rejects if the client does not initialize in time" name="Launch Darkly: LD API returns promise that rejects if the client does not initialize in time" time="0.002">
     </testcase>
@@ -45,27 +45,27 @@
     </testcase>
     <testcase classname="Launch Darkly: getPromiseFeatureFlag returns reject when there is no default value is provided" name="Launch Darkly: getPromiseFeatureFlag returns reject when there is no default value is provided" time="0.001">
     </testcase>
-    <testcase classname="Launch Darkly: getAllFlags returns all flags belonging to that userKey" name="Launch Darkly: getAllFlags returns all flags belonging to that userKey" time="0.002">
+    <testcase classname="Launch Darkly: getAllFlags returns all flags belonging to that userKey" name="Launch Darkly: getAllFlags returns all flags belonging to that userKey" time="0.001">
     </testcase>
   </testsuite>
-  <testsuite name="Launch Darkly Plugin " errors="0" failures="0" skipped="0" timestamp="2020-05-19T23:46:46" time="1.351" tests="9">
-    <testcase classname="Launch Darkly Plugin  FeatureFlag: should render component if flagKey value is true in appFlags object " name="Launch Darkly Plugin  FeatureFlag: should render component if flagKey value is true in appFlags object " time="0.011">
+  <testsuite name="Launch Darkly Plugin " errors="0" failures="0" skipped="0" timestamp="2020-05-19T23:47:59" time="1.351" tests="9">
+    <testcase classname="Launch Darkly Plugin  FeatureFlag: should render component if flagKey value is true in appFlags object " name="Launch Darkly Plugin  FeatureFlag: should render component if flagKey value is true in appFlags object " time="0.009">
     </testcase>
-    <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey value is false in appFlags object " name="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey value is false in appFlags object " time="0.001">
+    <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey value is false in appFlags object " name="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey value is false in appFlags object " time="0">
     </testcase>
-    <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey does not exist in appFlags object " name="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey does not exist in appFlags object " time="0">
+    <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey does not exist in appFlags object " name="Launch Darkly Plugin  FeatureFlag: should not render component if flagKey does not exist in appFlags object " time="0.001">
     </testcase>
-    <testcase classname="Launch Darkly Plugin  FeatureFlag: should render only the FeatureTrue when flagKey value is true" name="Launch Darkly Plugin  FeatureFlag: should render only the FeatureTrue when flagKey value is true" time="0.031">
+    <testcase classname="Launch Darkly Plugin  FeatureFlag: should render only the FeatureTrue when flagKey value is true" name="Launch Darkly Plugin  FeatureFlag: should render only the FeatureTrue when flagKey value is true" time="0.027">
     </testcase>
-    <testcase classname="Launch Darkly Plugin  FeatureFlag: should render only the FeatureFalse when flagKey value is false" name="Launch Darkly Plugin  FeatureFlag: should render only the FeatureFalse when flagKey value is false" time="0.004">
+    <testcase classname="Launch Darkly Plugin  FeatureFlag: should render only the FeatureFalse when flagKey value is false" name="Launch Darkly Plugin  FeatureFlag: should render only the FeatureFalse when flagKey value is false" time="0.003">
     </testcase>
     <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render either FeatureTrue or FeatureFalse when it gets mixed with NonPluginElement and should throw a warnring" name="Launch Darkly Plugin  FeatureFlag: should not render either FeatureTrue or FeatureFalse when it gets mixed with NonPluginElement and should throw a warnring" time="0.008">
     </testcase>
     <testcase classname="Launch Darkly Plugin  FeatureSwitch: renders the FeatureCase component that matches the flagKey " name="Launch Darkly Plugin  FeatureSwitch: renders the FeatureCase component that matches the flagKey " time="0.021">
     </testcase>
-    <testcase classname="Launch Darkly Plugin  FeatureSwitch: renders the FeatureDefault component when the no FeatureCase found that matches the flagKey " name="Launch Darkly Plugin  FeatureSwitch: renders the FeatureDefault component when the no FeatureCase found that matches the flagKey " time="0.003">
+    <testcase classname="Launch Darkly Plugin  FeatureSwitch: renders the FeatureDefault component when the no FeatureCase found that matches the flagKey " name="Launch Darkly Plugin  FeatureSwitch: renders the FeatureDefault component when the no FeatureCase found that matches the flagKey " time="0.002">
     </testcase>
-    <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render the FeatureSwitch and throw a warning when FeatureSwitch gets mixed with NonPlugin elements" name="Launch Darkly Plugin  FeatureFlag: should not render the FeatureSwitch and throw a warning when FeatureSwitch gets mixed with NonPlugin elements" time="0.014">
+    <testcase classname="Launch Darkly Plugin  FeatureFlag: should not render the FeatureSwitch and throw a warning when FeatureSwitch gets mixed with NonPlugin elements" name="Launch Darkly Plugin  FeatureFlag: should not render the FeatureSwitch and throw a warning when FeatureSwitch gets mixed with NonPlugin elements" time="0.013">
     </testcase>
   </testsuite>
 </testsuites>
