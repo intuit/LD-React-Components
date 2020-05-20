@@ -89,7 +89,7 @@
     "jest-junit": "^10.0.0",
     "jsdom": "16.2.2",
     "jsdom-global": "3.0.2",
-    "mkdirp": "^0.5.1",
+    "mkdirp": "^1.0.4",
     "mocha": "^7.1.2",
     "nyc": "^15.0.1",
     "prettier": "^2.0.5",
