@@ -1,3 +1,15 @@
+# v1.0.75 (Wed May 20 2020)
+
+#### 🐛 Bug Fix
+
+- Second part of NPM updates [#79](https://github.com/intuit/LD-React-Components/pull/79) ([@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 1
+
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.74 (Tue May 19 2020)
 
 #### 🐛  Bug Fix
