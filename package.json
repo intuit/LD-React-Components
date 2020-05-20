@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "start-storybook -p 6010",
-    "prepare": "yarn build",
+    "prepare": "npm run snyk-protect && yarn build",
     "clean": "rimraf ./dist ./coverage ./docs ./test-results",
     "test": "yarn add --dev jest-junit && yarn build && jest --coverage --reporters=default --reporters=jest-junit && mkdir -p test-reports/jest && mv junit.xml test-reports/jest/results.xml",
     "lint": "eslint src/",
