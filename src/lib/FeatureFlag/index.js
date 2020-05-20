@@ -12,7 +12,7 @@ function FeatureFlag(props) {
   let isNonPluginComponent = false;
   // childArray to render
   const childArray = [];
-  React.Children.forEach(children, element => {
+  React.Children.forEach(children, (element) => {
     if (
       React.isValidElement(element) &&
       (element.type.displayName === 'FeatureTrue' || element.type.name === 'FeatureTrue')
@@ -79,7 +79,7 @@ function FeatureFlag(props) {
     }
   });
 
-  return React.Children.map(childArray, child => child);
+  return React.Children.map(childArray, (child) => child);
 }
 
 FeatureFlag.propTypes = {
