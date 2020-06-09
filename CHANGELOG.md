@@ -1,3 +1,15 @@
+# v1.0.77 (Tue Jun 09 2020)
+
+#### 🐛 Bug Fix
+
+- Bump websocket-extensions from 0.1.3 to 0.1.4 [#81](https://github.com/intuit/LD-React-Components/pull/81) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v1.0.76 (Wed May 20 2020)
 
 #### 🐛 Bug Fix
