@@ -1,3 +1,16 @@
+# v1.0.78 (Fri Aug 21 2020)
+
+#### 🐛 Bug Fix
+
+- Bump elliptic from 6.5.2 to 6.5.3 [#83](https://github.com/intuit/LD-React-Components/pull/83) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump lodash from 4.17.15 to 4.17.19 [#82](https://github.com/intuit/LD-React-Components/pull/82) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v1.0.77 (Tue Jun 09 2020)
 
 #### 🐛 Bug Fix
