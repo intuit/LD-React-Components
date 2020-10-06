@@ -1,5 +1,5 @@
 import React from 'react';
-import { text, object } from '@storybook/addon-knobs';
+import { withKnobs, text, object } from '@storybook/addon-knobs';
 
 import FeatureFlag from './index.tsx';
 import FeatureSwitch from '../FeatureSwitch';
@@ -12,6 +12,7 @@ import notes from './README.md';
 
 export default {
   title: 'Component|Feature Flag',
+  decorators: [withKnobs],
   component: FeatureFlag,
   parameters: { notes }
 };
