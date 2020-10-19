@@ -28,6 +28,11 @@
     "release": "auto shipit",
     "snyk-protect": "snyk protect"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "keywords": [
     "launch-darkly",
     "feature",
@@ -44,6 +49,8 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@babel/preset-typescript": "^7.9.0",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@storybook/addon-a11y": "^6.0.26",
     "@storybook/addon-actions": "^6.0.26",
     "@storybook/addon-docs": "^6.0.26",
@@ -85,6 +92,7 @@
     "expect": "^26.0.1",
     "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.3.0",
     "jest": "^26.0.1",
     "jest-junit": "^12.0.0",
     "jsdom": "16.2.2",
