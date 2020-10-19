@@ -301,6 +301,9 @@ To see the demo go to http://localhost:8080
     <td align="center"><a href="https://github.com/erwintj"><img src="https://avatars0.githubusercontent.com/u/13356723?v=4" width="100px;" alt=""/><br /><sub><b>Trevor Erwin</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/issues?q=author%3Aerwintj" title="Bug reports">🐛</a></td>
     <td align="center"><a href="http://faulk.me"><img src="https://avatars0.githubusercontent.com/u/2238782?v=4" width="100px;" alt=""/><br /><sub><b>Winter Faulk</b></sub></a><br /><a href="#maintenance-faulker" title="Maintenance">🚧</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/skodamarthi"><img src="https://avatars0.githubusercontent.com/u/4538858?v=4" width="100px;" alt=""/><br /><sub><b>Susmitha Kodamarthi</b></sub></a><br /><a href="https://github.com/intuit/LD-React-Components/commits?author=skodamarthi" title="Tests">⚠️</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
