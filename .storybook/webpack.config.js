@@ -7,34 +7,38 @@
 // to "React Create App". This only has babel loader to load JavaScript.
 
 module.exports = {
-  optimization: {
-    minimize: false
-  },
-  plugins: [
-    // your custom plugins
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.(ts|tsx)$/,
-        use: [
-          {
-            loader: require.resolve('awesome-typescript-loader'),
-          },
-          // Optional
-          {
-            loader: require.resolve('react-docgen-typescript-loader'),
-          },
-        ],
-      },
-      {
-        test: /\.stories\.jsx?$/,
-        loaders: [require.resolve('@storybook/source-loader')],
-        enforce: 'pre',
-      }
+    optimization: {
+        minimize: false,
+    },
+    plugins: [
+        // your custom plugins
     ],
-  },
-  resolve: {
-    extensions: ['.ts', '.tsx']
-  }
+    module: {
+        rules: [
+            {
+                test: /\.(ts|tsx)$/,
+                use: [
+                    {
+                        loader: require.resolve('awesome-typescript-loader'),
+                    },
+                    // Optional
+                    {
+                        loader: require.resolve('react-docgen-typescript-loader'),
+                    },
+                ],
+            },
+            {
+                test: /\.stories\.jsx?$/,
+                use: [
+                    {
+                        loaders: require.resolve('@storybook/source-loader'),
+                    },
+                ],
+                enforce: 'pre',
+            },
+        ],
+    },
+    resolve: {
+        extensions: ['.ts', '.tsx'],
+    },
 };
