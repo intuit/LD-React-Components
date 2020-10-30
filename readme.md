@@ -20,7 +20,7 @@
 
 Install node module
 
-You can use `npm` or `yarn` however it is advised to choose one and stick with it. For the purposes of documentation `yarn` is being used.
+You can use `npm` or `yarn`; however, it is advised to choose one and stick with it. For the purposes of documentation `yarn` is being used.
 
 ```shell
 yarn add ld-react-components
