@@ -1,0 +1,18 @@
+version: 2.1
+
+defaults: &defaults
+  docker:
+    - image: circleci/node:8.14-browsers
+
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: echo "dont build me"
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - install
