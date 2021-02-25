@@ -1,3 +1,23 @@
+# v1.0.79 (Thu Feb 25 2021)
+
+#### 🐛 Bug Fix
+
+- Bump ini from 1.3.5 to 1.3.8 [#95](https://github.com/intuit/LD-React-Components/pull/95) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- docs: add skodamarthi as a contributor [#92](https://github.com/intuit/LD-React-Components/pull/92) ([@allcontributors[bot]](https://github.com/allcontributors[bot]))
+- chore: added commitlint support [#89](https://github.com/intuit/LD-React-Components/pull/89) (susmitha_kodamarthi@intuit.com [@skodamarthi](https://github.com/skodamarthi))
+- docs: add faulker as a contributor [#90](https://github.com/intuit/LD-React-Components/pull/90) ([@allcontributors[bot]](https://github.com/allcontributors[bot]))
+- feat(storybook): updates storybook to v6 [#88](https://github.com/intuit/LD-React-Components/pull/88) (Winter_Faulk@intuit.com)
+
+#### Authors: 5
+
+- [@allcontributors[bot]](https://github.com/allcontributors[bot])
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- skodamarthi (susmitha_kodamarthi@intuit.com)
+- Susmitha Kodamarthi ([@skodamarthi](https://github.com/skodamarthi))
+- Winter Faulk ([@faulker](https://github.com/faulker))
+
+---
+
 # v1.0.78 (Fri Aug 21 2020)
 
 #### 🐛 Bug Fix
