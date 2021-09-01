@@ -1,3 +1,27 @@
+# v1.0.80 (Wed Sep 01 2021)
+
+#### 🐛 Bug Fix
+
+- Bump package [#113](https://github.com/intuit/LD-React-Components/pull/113) ([@poorpaddy](https://github.com/poorpaddy))
+- Bump tar from 6.0.5 to 6.1.11 [#111](https://github.com/intuit/LD-React-Components/pull/111) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+- Bump path-parse from 1.0.6 to 1.0.7 [#109](https://github.com/intuit/LD-React-Components/pull/109) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+- Bump trim-newlines from 3.0.0 to 3.0.1 [#105](https://github.com/intuit/LD-React-Components/pull/105) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+- Bump dns-packet from 1.3.1 to 1.3.4 [#104](https://github.com/intuit/LD-React-Components/pull/104) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+- Bump url-parse from 1.4.7 to 1.5.1 [#102](https://github.com/intuit/LD-React-Components/pull/102) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump ssri from 6.0.1 to 6.0.2 [#101](https://github.com/intuit/LD-React-Components/pull/101) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump gitlog from 4.0.0 to 4.0.4 [#100](https://github.com/intuit/LD-React-Components/pull/100) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+- Bump y18n from 3.2.1 to 3.2.2 [#98](https://github.com/intuit/LD-React-Components/pull/98) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- [Snyk] Security upgrade snyk from 1.436.0 to 1.465.0 [#97](https://github.com/intuit/LD-React-Components/pull/97) ([@snyk-bot](https://github.com/snyk-bot) [@poorpaddy](https://github.com/poorpaddy))
+- Bump elliptic from 6.5.3 to 6.5.4 [#96](https://github.com/intuit/LD-React-Components/pull/96) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 3
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+- Snyk bot ([@snyk-bot](https://github.com/snyk-bot))
+
+---
+
 # v1.0.79 (Thu Feb 25 2021)
 
 #### 🐛 Bug Fix
