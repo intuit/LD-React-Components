@@ -1,3 +1,17 @@
+# v1.0.81 (Tue Feb 15 2022)
+
+#### 🐛 Bug Fix
+
+- Bump ajv from 6.12.2 to 6.12.6 [#117](https://github.com/intuit/LD-React-Components/pull/117) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump pathval from 1.1.0 to 1.1.1 [#116](https://github.com/intuit/LD-React-Components/pull/116) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump tmpl from 1.0.4 to 1.0.5 [#114](https://github.com/intuit/LD-React-Components/pull/114) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 1
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+
+---
+
 # v1.0.80 (Wed Sep 01 2021)
 
 #### 🐛 Bug Fix
