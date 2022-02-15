@@ -1,3 +1,16 @@
+# v1.0.82 (Tue Feb 15 2022)
+
+#### 🐛 Bug Fix
+
+- Bump follow-redirects from 1.11.0 to 1.14.8 [#118](https://github.com/intuit/LD-React-Components/pull/118) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.81 (Tue Feb 15 2022)
 
 #### 🐛 Bug Fix
