@@ -1,3 +1,17 @@
+# v1.0.83 (Tue Feb 15 2022)
+
+#### 🐛 Bug Fix
+
+- Bump ws from 5.2.2 to 5.2.3 [#120](https://github.com/intuit/LD-React-Components/pull/120) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+- Bump trim-off-newlines from 1.0.1 to 1.0.3 [#119](https://github.com/intuit/LD-React-Components/pull/119) ([@dependabot[bot]](https://github.com/dependabot[bot]) [@poorpaddy](https://github.com/poorpaddy))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Dave Bergschneider ([@poorpaddy](https://github.com/poorpaddy))
+
+---
+
 # v1.0.82 (Tue Feb 15 2022)
 
 #### 🐛 Bug Fix
